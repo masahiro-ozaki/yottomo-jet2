@@ -47,7 +47,7 @@
     
     body {
           background-color: #486d46;
-          background-image: url("yottomo-jet-image/tukue2.jpg");
+          background-image: url("../yottomo-jet-image/tukue2.jpg");
           background-size: cover;
           background-attachment: fixed;
           background-position: center center;
@@ -94,22 +94,7 @@
                     <li role="presentation" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">ズッ友になるかも<span class="badge"></span></a></li>
                     <li role="presentation" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>
                 </ul>
-                <!--メモ欄-->
-                <!--  {!! Form::open(['route' => 'memos.store']) !!}-->
-                <!--      <div class="form-group">-->
-                <!--          {!! Form::textarea('content', old('content'), ['class' => 'form-control', 'rows' => '2']) !!}-->
-                <!--          {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}-->
-                <!--      </div>-->
-                <!--  {!! Form::close() !!}-->
             @endif
-            <!--@if (count($memos) > 0)-->
-                <!--<ul class="nav nav-tabs nav-justified">-->
-                <!--    <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">メモ一覧 <span class="badge">{{ $count_memos }}</span></a></li>-->
-                <!--    <li role="presentation" class="{{ Request::is('users/*/friends') ? 'active' : '' }}"><a href="{{ route('users.friends', ['id' => $user->id]) }}">ヨッ友一覧 <span class="badge">{{ $count_friends }}</span></a></li>-->
-                <!--    <li><a href="#">ズッ友一覧</a></li>-->
-                <!--</ul>-->
-            <!--    @include('memos.memos', ['memos' => $memos])-->
-            <!--@endif-->
              <!--
              ここにプロフィールを表示できるようにする
              [編集]ボタンがあって、それを押すと、edit.blade.phpにとぶ
@@ -117,7 +102,7 @@
              -->
             <div class="col-xs-10 col-xs-offset-1">
                 <br>
-                <div class="center jumbotron" style="background:url(yottomo-jet-image/profilebackground.png);">
+                <div class="center jumbotron" style="background:url(../yottomo-jet-image/profilebackground.png);">
                     
                     <section class="icon">
                     <div class="panel">

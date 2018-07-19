@@ -24,11 +24,11 @@ class UsersController extends Controller
     public function show($id)
     {
         $user = User::find($id);
-        $memos = $user->memos()->orderBy('created_at', 'desc')->paginate(10);
+        // $memos = $user->memos()->orderBy('created_at', 'desc')->paginate(10);
         
         $data = [
             'user' => $user,
-            'memos' => $memos,
+            // 'memos' => $memos,
         ];
         
         $data += $this->counts($user);

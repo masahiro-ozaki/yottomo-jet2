@@ -1,6 +1,6 @@
 <style>
 .navbar{
-    background-image: url("yottomo-jet-image/profilebackground.png");
+    background-image: url("../yottomo-jet-image/profilebackground.png");
 }
 </style>
 
