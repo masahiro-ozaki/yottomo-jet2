@@ -106,9 +106,9 @@ class UsersController extends Controller
         
         // $sougo_id：$futures_aと$hoge_aの中で共通するidのみを取得
         $sougo_id = array_intersect($futures_a, $hoge_a);
-        $count_sougo = count($sougo_id);
+        // $count_sougo = count($sougo_id);
         
-        // $data = [];
+        $data = [];
         
         if ($sougo_id) {
             $futures = User::select()->whereIn('id', $sougo_id)->paginate(10);
@@ -121,8 +121,7 @@ class UsersController extends Controller
             'users' => $futures,
         ];
                 
-            // ↓多分いらないかも？でも、はまちゃんに教わった！
-            // array_push($data, ['user' => $user], ['users' => $futures]);
+            array_push($data, ['user' => $user], ['users' => $futures]);
             // array_push($data['users'], ['key' => 'val']);
                 
         $data += $this->counts($user);

@@ -35,10 +35,10 @@ class UserFriendController extends Controller
     }
     
     // future store
-    public function future(Request $request, $id)
-    {
-        \Auth::user()->future($id);
-        return redirect()->back();
-    }
+    // public function future(Request $request, $id)
+    // {
+    //     \Auth::user()->future($id);
+    //     return redirect()->back();
+    // }
     
 }
