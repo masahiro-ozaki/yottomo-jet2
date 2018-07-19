@@ -78,6 +78,16 @@
         background-size: 20px 20px;
         padding: 1em;
         color: #593869;
+    }    
+    
+    .text textarea{
+        height: 50px;
+        width: 65%;
+    }
+    
+    textarea{
+        width: 100%;
+    
     }
 
 </style>
@@ -113,11 +123,11 @@
              [編集]ボタンがあって、それを押すと、edit.blade.phpにとぶ
              edit.blade.phpで[更新]を押すと、更新されてこのページにかえってくる
              -->
-            <div class="col-xs-10 col-xs-offset-1  col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+            <div class=col-xs-12 "col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
                 <br>
                 
                 <section class="background">
-                <div class="center jumbotron" style="background-color:#81F7F3">
+                <div class="center jumbotron" style="background:url(../../yottomo-jet-image/profilebackground.png);">
                     
                         <section class="icon">
                         <div class="panel">
@@ -142,18 +152,20 @@
                         <!-- link_to_route('profiles.show', $profile->name, ['id' => $profile->id]) !!}-->
                         {!! Form::model($user, ['route' => ['profiles.update', 'id' => $user->id], 'method' => 'put']) !!}
                         <div class="profile">
-                            私は{!! Form::text('birthday') !!}生まれで、出身地は{!! Form::text('birthplace') !!}だよ。<br>
-                            性格は{!! Form::text('character1') !!}と思っているんだけど、<br>
-                            まわりからは{!! Form::text('character2') !!}って言われるよ。<br>
-                            そんな私の趣味は、{!! Form::text('hobby') !!}で、<br>
-                            チャームポイントは{!! Form::text('charmpoint') !!}なんだ。<br>
-                            将来の夢は{!! Form::text('dream') !!}で、<br>
-                            好きなアプリは{!! Form::text('app') !!}だよ。<br>
-                            私の{!! Form::text('ranktitle') !!}ランキングを発表するよ！<br>
-                            第1位{!! Form::text('rank1') !!}<br>
-                            第2位{!! Form::text('rank2') !!}<br>
-                            第3位{!! Form::text('rank3') !!}<br>
+                            <section class="text">
+                            私は{!! Form::textarea('birthday') !!}生まれで、出身地は{!! Form::textarea('birthplace') !!}だよ。<br>
+                            性格は{!! Form::textarea('character1') !!}と思っているんだけど、<br>
+                            まわりからは{!! Form::textarea('character2') !!}って言われるよ。<br>
+                            そんな私の趣味は、{!! Form::textarea('hobby') !!}で、<br>
+                            チャームポイントは{!! Form::textarea('charmpoint') !!}なんだ。<br>
+                            将来の夢は{!! Form::textarea('dream') !!}で、<br>
+                            好きなアプリは{!! Form::textarea('app') !!}だよ。<br>
+                            私の{!! Form::textarea('ranktitle') !!}ランキングを発表するよ！<br>
+                            第1位{!! Form::textarea('rank1') !!}<br>
+                            第2位{!! Form::textarea('rank2') !!}<br>
+                            第3位{!! Form::textarea('rank3') !!}<br>
                             自由記述欄
+                            </section>
                             <div>
                                 <p>{!! Form::textarea('content') !!}</p>
                             </div>

@@ -10,9 +10,11 @@
     /*  color:#fff;*/
     /*}*/
     
-    body {
+    .img {
         background: url('yottomo-jet-image/welcome.jpg') no-repeat; 
         background-size: cover;
+        height: 600px;
+        width: 100%;
     }
     
     .btn1{
@@ -457,48 +459,52 @@
     
         
              <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
+                <!--<div class="col-xs-12">-->
+                    <div class="img">
                     <div class="text-right">
                         <div class='btn1'>
-                            {!! link_to_route('signup.get', ' Signup', null) !!}
+                            {!! link_to_route('signup.get', 'Signup', null) !!}
                         </div>
                         <div class='btn2'>
-                            {!! link_to_route('login', ' Login', null) !!}
+                            {!! link_to_route('login', 'Login', null) !!}
                         </div>
                     </div>
                     <section class='panel-heading1'>ときめき<br></section> 
-                    <section class='panel-heading2'>フレンズ<br></section>
-                    <section class='panel-heading3'>～forever with you～<br></section>
+                    <div class="col-xs-10 col-xs-offset-2"><section class='panel-heading2'>フレンズ<br></section></div>
+                    <div class="col-xs-9 col-xs-offset-3"><section class='panel-heading3'>～forever with you～<br></section></div>
+                    </div>
+                    <div class="col-xs-12">
                     <section class='flex'>
-                        <section class="bt-samp55">
-                            <div>
-                                <h3 class='tokimeki, panel-heading'>ときめきフレンズとは？？</h3>
-                            </div>
-                                <p class='panel-heading'>ときめきフレンズとは、同期ともっと仲良くなれるアプリだよ☆彡</p>
+                        <!--<div class="col-xs-10 col-xs-offset-2">-->
+                        <section class="bt-samp55" >
+                            <div><h3 class='tokimeki, panel-heading'>ときめきフレンズとは？？</h3></div>
+                            <p class='panel-heading'>ときめきフレンズとは、同期ともっと仲良くなれるアプリだよ☆彡</p>
                         </section>
-                            
+                        <!--</div>-->
+                        
+                        <!--<div class="col-xs-4 col-xs-offset-8">-->
                         <section class="bt-samp56">
-                            <div>
-                                <h3 class='tokimeki, panel-heading'>同期と仲良くなるにはどうしたらいいの？？</h3>
-                            </div>
-                                <p class='panel-heading'>仲良くなりたい同期に“いいね”を押してみよう！</p>
+                            <div><h3 class='tokimeki, panel-heading'>同期と仲良くなるにはどうしたらいいの？？</h3></div>
+                            <p class='panel-heading'>仲良くなりたい同期に“いいね”を押してみよう！</p>
                         </section>
-                            
+                        <!--</div>-->
+                        
+                        <!--<div class="col-xs-10 col-xs-offset-2">-->
                         <section class="bt-samp57">
-                            <div>
-                                <h3 class='tokimeki, panel-heading'>同期に“いいね”を押すとどうなるの？？</h3>
-                            </div>
-                                <p class='panel-heading'>お互いが“いいね”を押すとマッチングするよ！</p>
+                            <div><h3 class='tokimeki, panel-heading'>同期に“いいね”を押すとどうなるの？？</h3></div>
+                            <p class='panel-heading'>お互いが“いいね”を押すとマッチングするよ！</p>
                         </section>
-                            
+                        <!--</div>-->
+                        
+                        <!--<div class="col-xs-4 col-xs-offset-8">    -->
                         <section class="bt-samp58">
-                            <div>
-                                <h2 class='tokimeki, panel-heading'>“いいね”を押してもらうにはどうすればいいかな？？</h2>
-                            </div>
-                                <p class='panel-heading'>自分のプロフィールを書いて、みんなにアピールしよう！</p>
+                            <div><h2 class='tokimeki, panel-heading'>“いいね”を押してもらうにはどうすればいいかな？？</h2></div>
+                            <p class='panel-heading'>自分のプロフィールを書いて、みんなにアピールしよう！</p>
                         </section>
+                        <!--</div>-->
                     </section>
-                </div> 
+                    </div>
+                <!--</div> -->
             </div>     
         
     
