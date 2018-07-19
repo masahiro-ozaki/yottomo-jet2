@@ -33,25 +33,59 @@
         font-size: 50px;
     }
     
-    .btn1{
-        display: inline-block;
-      padding: .20em .20em;
-      border: 2px dashed #333;
-      border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
-      color: #333;
+    /*.btn1{*/
+    /*    display: inline-block;*/
+    /*  padding: .20em .20em;*/
+    /*  border: 2px dashed #333;*/
+    /*  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;*/
+    /*  color: #333;*/
       /*text-decoration: none;*/
-      text-align: center;
-      font-size: 1.5em;
-      font-family:'HuiFontP109';
-    }
+    /*  text-align: center;*/
+    /*  font-size: 1.5em;*/
+    /*  font-family:'HuiFontP109';*/
+    /*}*/
     
     body {
-          background-color: #486d46;
-          background-image: url("../yottomo-jet-image/tukue2.jpg");
-          background-size: cover;
-          background-attachment: fixed;
-          background-position: center center;
+        background-color: #486d46;
+        background-image: url("../yottomo-jet-image/tukue2.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
        }
+    
+    .nav {
+        font-family:'HuiFontP109'; 
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .nav1 {
+        background: #dee3e5;
+        background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+        background-position: 0 0, 10px 10px;
+        background-size: 20px 20px;
+        padding: 1em;
+        color: #593869;
+    }
+          
+    .nav2 {
+        background:#e7c7f9;
+        background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+        background-position: 0 0, 10px 10px;
+        background-size: 20px 20px;
+        padding: 1em;
+        color: #593869;
+    }
+    
+    
+    .nav3 {
+        background: #bee9f7;
+        background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+        background-position: 0 0, 10px 10px;
+        background-size: 20px 20px;
+        padding: 1em;
+        color: #593869;
+    }
     
     /*.button {*/
     /*    display: inline-block;*/
