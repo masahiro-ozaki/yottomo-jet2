@@ -122,7 +122,7 @@ class UsersController extends Controller
         ];
                 
             // ↓多分いらないかも？でも、はまちゃんに教わった！
-            array_push($data, ['user' => $user], ['users' => $futures]);
+            // array_push($data, ['user' => $user], ['users' => $futures]);
             // array_push($data['users'], ['key' => 'val']);
                 
         $data += $this->counts($user);

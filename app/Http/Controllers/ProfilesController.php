@@ -55,6 +55,10 @@ class ProfilesController extends Controller
             'charmpoint' => 'max:191',
             'dream' => 'max:191',
             'app' => 'max:191',
+            'ranktitile' => 'max:191',
+            'rank1' => 'max:191',
+            'rank2' => 'max:191',
+            'rank3' => 'max:191',
         ]);
         
         $profile = new User;
@@ -67,6 +71,10 @@ class ProfilesController extends Controller
         $profile->charmpoint = $request->charmpoint;
         $profile->dream = $request->dream;
         $profile->app = $request->app;
+        $profile->ranktitle = $request->ranktitle;
+        $profile->rank1 = $request->rank1;
+        $profile->rank2 = $request->rank2;
+        $profile->rank3 = $request->rank3;
         $profile->save();
         
         return redirect('/');
@@ -121,6 +129,10 @@ class ProfilesController extends Controller
             'charmpoint' => 'max:191',
             'dream' => 'max:191',
             'app' => 'max:191',
+            'ranktitile' => 'max:191',
+            'rank1' => 'max:191',
+            'rank2' => 'max:191',
+            'rank3' => 'max:191',
         ]);
         
         $profile = User::find($id);
@@ -133,6 +145,10 @@ class ProfilesController extends Controller
         $profile->charmpoint = $request->charmpoint;
         $profile->dream = $request->dream;
         $profile->app = $request->app;
+        $profile->ranktitle = $request->ranktitle;
+        $profile->rank1 = $request->rank1;
+        $profile->rank2 = $request->rank2;
+        $profile->rank3 = $request->rank3;
         $profile->save();
         
         return redirect('/');
