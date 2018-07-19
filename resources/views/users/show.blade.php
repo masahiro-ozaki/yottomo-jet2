@@ -104,8 +104,9 @@
 
 @section('content')
     <div class="row">
-        <div class="col-12 clearfix">
-        <div class="float-left">
+        <!--<div class="col-12 clearfix">-->
+        <!--<div class="float-left">-->
+        
         <!--<aside class="col-xs-2">-->
         <!--    <div class="panel panel-default">-->
         <!--        <div class="panel-heading">-->
@@ -120,13 +121,13 @@
         <!--        @include('user_friend.zuttomo_button', ['user' => $user])-->
         <!--    </div>-->
         <!--</aside>-->
-        <div class="col-xs-10">
+        <div class="col-xs-12">
             @if (Auth::id() == $user->id)
                 <ul class="nav nav-tabs nav-justified">
                     <!--<li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">メモ一覧 <span class="badge">{{ $count_memos }}</span></a></li>-->
-                    <li role="presentation" class="{{ Request::is('users/*/friends') ? 'active' : '' }}"><a href="{{ route('users.friends', ['id' => $user->id]) }}">友達になりたい人たち<span class="badge">{{ $count_friends }}</span></a></li>
-                    <li role="presentation" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">ズッ友になるかも<span class="badge"></span></a></li>
-                    <li role="presentation" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>
+                    <li role="presentation" class="nav1" class="{{ Request::is('users/*/friends') ? 'active' : '' }}"><a href="{{ route('users.friends', ['id' => $user->id]) }}">友達になりたい人たち<span class="badge">{{ $count_friends }}</span></a></li>
+                    <li role="presentation" class="nav2" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">ズッ友になるかも<span class="badge"></span></a></li>
+                    <li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>
                 </ul>
             @endif
              <!--
@@ -134,7 +135,7 @@
              [編集]ボタンがあって、それを押すと、edit.blade.phpにとぶ
              edit.blade.phpで[更新]を押すと、更新されてこのページにかえってくる
              -->
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
                 <br>
                 <div class="center jumbotron" style="background:url(../yottomo-jet-image/profilebackground.png);">
                     
@@ -185,7 +186,7 @@
             </div>
         </div>
         
-        </div>
-        </div>
+        <!--</div>-->
+        <!--</div>-->
     </div>
 @endsection
