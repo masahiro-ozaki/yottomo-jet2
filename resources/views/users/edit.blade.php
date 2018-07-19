@@ -105,6 +105,8 @@
                             <h2>{{ $user->name }}<br> ({{ $user->hometeam }},{{ $user->codingteam }})</h2>
                         </div>
                         
+                        <!-- link_to_route('profiles.show', $profile->name, ['id' => $profile->id]) !!}-->
+                        {!! Form::model($user, ['route' => ['profiles.update', 'id' => $user->id], 'method' => 'put']) !!}
                         <div class="profile">
                             私は{!! Form::text('birthday') !!}生まれで、出身地は{!! Form::text('birthplace') !!}だよ。<br>
                             性格は{!! Form::text('character1') !!}と思っているんだけど、<br>
