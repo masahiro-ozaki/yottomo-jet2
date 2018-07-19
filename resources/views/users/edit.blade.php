@@ -123,7 +123,7 @@
              [編集]ボタンがあって、それを押すと、edit.blade.phpにとぶ
              edit.blade.phpで[更新]を押すと、更新されてこのページにかえってくる
              -->
-            <div class=col-xs-12 "col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
                 <br>
                 
                 <section class="background">
@@ -178,27 +178,6 @@
                             </div>
                         {!! Form::close() !!}
                         </div>
-                    
-                    <!--<span style="font : normal 900 10pt 'Meiryo'">-->
-                        <!-- link_to_route('profiles.show', $profile->name, ['id' => $profile->id]) !!}-->
-                    <!--    {!! Form::model($user, ['route' => ['profiles.update', 'id' => $user->id], 'method' => 'put']) !!}-->
-                    <!--    <div class="form-group">-->
-                    <!--        私は{!! Form::date('birthday', \Carbon\Carbon::now()) !!}生まれで、出身地は{!! Form::text('birthplace') !!}だよ。<br>-->
-                    <!--        性格は{!! Form::text('character1') !!}と思っているんだけど、-->
-                    <!--        まわりからは{!! Form::text('character2') !!}って言われるよ。<br>-->
-                    <!--        そんな私の趣味は、{!! Form::text('hobby') !!}で、-->
-                    <!--        チャームポイントは{!! Form::text('charmpoint') !!}なんだ。<br>-->
-                    <!--        将来の夢は{!! Form::text('dream') !!}で、-->
-                    <!--        好きなアプリは{!! Form::text('app') !!}だよ。<br>-->
-                    <!--        最後に一言、{!! Form::text('content') !!}。よろしくね！-->
-                    <!--    </div>-->
-                    <!--        <div class="pull-right">-->
-                    <!--            @if (Auth::id() == $user->id)-->
-                    <!--                {!! Form::submit('更新する', ['class' => 'btn btn-primary']) !!}-->
-                    <!--            @endif-->
-                    <!--        </div>-->
-                    <!--    {!! Form::close() !!}-->
-                    <!--</span>-->
                 </div>
                 </section>
                 <!--{!! Form::model($user, ['route' => 'profiles.store']) !!}-->
