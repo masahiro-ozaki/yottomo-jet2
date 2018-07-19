@@ -1,3 +1,9 @@
+<style>
+body{
+    background: linear-gradient(#F5A9D0, #81F7F3);
+}
+</style>
+
 @if (count($users) > 0)
 <ul class="media-list">
     
