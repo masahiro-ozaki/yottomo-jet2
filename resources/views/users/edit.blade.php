@@ -1,20 +1,70 @@
+<style>
+
+    .profile{
+    font-family:'HuiFontP109';
+    font-size: 30px;
+    }
+    
+    @font-face{
+    font-family:'HuiFontP109';
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot');
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot?#iefix') format('embedded-opentype'),
+    url('https://dl.dropboxusercontent.com/s/7pscemjdvt0wyiq/HuiFontP109.woff') format('woff'),
+    url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
+    url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
+    }
+    
+    .icon{
+        float: right;
+        width: 150px;
+    }
+    
+    .scroll{
+        overflow-y:scroll;
+        margin-top: 15px;
+    }
+    
+    .panel-heading{
+        font-family:'HuiFontP109';
+        font-size: 40px;
+    }
+    
+    .panel-title{
+        font-family:'HuiFontP109';
+        font-size: 50px;
+    }
+    
+    /*.background{*/
+    /*background-image: ;*/
+    /*}*/
+    
+    body {
+          background-color: #486d46;
+          background-image: url("yottomo-jet-image/tukue2.jpg");
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center center;
+       }
+
+</style>
+
 @extends('layouts.app')
 
 @section('content')
     <div class="row">
-        <aside class="col-xs-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{{ $user->name }} ({{ $user->hometeam }},{{ $user->codingteam }})</h3>
-                </div>
-                <div class="panel-body">
-                <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->name, 500) }}" alt="">
-                </div>
-            </div>
-            <div class="pull-right">
-                @include('user_friend.friend_button', ['user' => $user])
-            </div>
-        </aside>
+        <!--<aside class="col-xs-2">-->
+        <!--    <div class="panel panel-default">-->
+        <!--        <div class="panel-heading">-->
+        <!--            <h3 class="panel-title">{{ $user->name }} ({{ $user->hometeam }},{{ $user->codingteam }})</h3>-->
+        <!--        </div>-->
+        <!--        <div class="panel-body">-->
+        <!--        <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->name, 500) }}" alt="">-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="pull-right">-->
+        <!--        @include('user_friend.friend_button', ['user' => $user])-->
+        <!--    </div>-->
+        <!--</aside>-->
         <div class="col-xs-10">
             @if (Auth::id() == $user->id)
                 <ul class="nav nav-tabs nav-justified">
@@ -31,28 +81,78 @@
              -->
             <div class="col-xs-10 col-xs-offset-1">
                 <br>
-                <div class="center jumbotron">
-                    <span style="font : normal 900 10pt 'Meiryo'">
-                        <!-- link_to_route('profiles.show', $profile->name, ['id' => $profile->id]) !!}-->
-                        {!! Form::model($user, ['route' => ['profiles.update', 'id' => $user->id], 'method' => 'put']) !!}
-                        <div class="form-group">
-                            私は{!! Form::date('birthday', \Carbon\Carbon::now()) !!}生まれで、出身地は{!! Form::text('birthplace') !!}だよ。<br>
-                            性格は{!! Form::text('character1') !!}と思っているんだけど、
-                            まわりからは{!! Form::text('character2') !!}って言われるよ。<br>
-                            そんな私の趣味は、{!! Form::text('hobby') !!}で、
-                            チャームポイントは{!! Form::text('charmpoint') !!}なんだ。<br>
-                            将来の夢は{!! Form::text('dream') !!}で、
-                            好きなアプリは{!! Form::text('app') !!}だよ。<br>
-                            最後に一言、{!! Form::text('content') !!}。よろしくね！
+                
+                <section class="background">
+                <div class="center jumbotron" style="background-color:#81F7F3">
+                    
+                        <section class="icon">
+                        <div class="panel">
+                        
+                            <div class="panel-body" >
+                                <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->name, 500) }}" alt="">
+                            </div>
                         </div>
+                        </section>
+                        
+                        <div class="pull-right">
+                            @include('user_friend.friend_button', ['user' => $user])
+                        </div>
+                        
+                        <div class="panel-heading" >
+                            PROFILE
+                        </div>
+                        <div class="panel-title">
+                            <h2>{{ $user->name }}<br> ({{ $user->hometeam }},{{ $user->codingteam }})</h2>
+                        </div>
+                        
+                        <div class="profile">
+                            私は{!! Form::text('birthday') !!}生まれで、出身地は{!! Form::text('birthplace') !!}だよ。<br>
+                            性格は{!! Form::text('character1') !!}と思っているんだけど、<br>
+                            まわりからは{!! Form::text('character2') !!}って言われるよ。<br>
+                            そんな私の趣味は、{!! Form::text('hobby') !!}で、<br>
+                            チャームポイントは{!! Form::text('charmpoint') !!}なんだ。<br>
+                            将来の夢は{!! Form::text('dream') !!}で、<br>
+                            好きなアプリは{!! Form::text('app') !!}だよ。<br>
+                            私の{!! Form::text('ranktitle') !!}ランキングを発表するよ！<br>
+                            第1位{!! Form::text('rank1') !!}<br>
+                            第2位{!! Form::text('rank2') !!}<br>
+                            第3位{!! Form::text('rank3') !!}<br>
+                            自由記述欄
+                            <div>
+                                <p>{!! Form::textarea('content') !!}</p>
+                            </div>
+                            
+                            
                             <div class="pull-right">
                                 @if (Auth::id() == $user->id)
-                                    {!! Form::submit('更新する', ['class' => 'btn btn-primary']) !!}
+                                    {!! Form::submit('更新する', ['class' => 'btn btn-info']) !!}
                                 @endif
                             </div>
                         {!! Form::close() !!}
-                    </span>
+                        </div>
+                    
+                    <!--<span style="font : normal 900 10pt 'Meiryo'">-->
+                        <!-- link_to_route('profiles.show', $profile->name, ['id' => $profile->id]) !!}-->
+                    <!--    {!! Form::model($user, ['route' => ['profiles.update', 'id' => $user->id], 'method' => 'put']) !!}-->
+                    <!--    <div class="form-group">-->
+                    <!--        私は{!! Form::date('birthday', \Carbon\Carbon::now()) !!}生まれで、出身地は{!! Form::text('birthplace') !!}だよ。<br>-->
+                    <!--        性格は{!! Form::text('character1') !!}と思っているんだけど、-->
+                    <!--        まわりからは{!! Form::text('character2') !!}って言われるよ。<br>-->
+                    <!--        そんな私の趣味は、{!! Form::text('hobby') !!}で、-->
+                    <!--        チャームポイントは{!! Form::text('charmpoint') !!}なんだ。<br>-->
+                    <!--        将来の夢は{!! Form::text('dream') !!}で、-->
+                    <!--        好きなアプリは{!! Form::text('app') !!}だよ。<br>-->
+                    <!--        最後に一言、{!! Form::text('content') !!}。よろしくね！-->
+                    <!--    </div>-->
+                    <!--        <div class="pull-right">-->
+                    <!--            @if (Auth::id() == $user->id)-->
+                    <!--                {!! Form::submit('更新する', ['class' => 'btn btn-primary']) !!}-->
+                    <!--            @endif-->
+                    <!--        </div>-->
+                    <!--    {!! Form::close() !!}-->
+                    <!--</span>-->
                 </div>
+                </section>
                 <!--{!! Form::model($user, ['route' => 'profiles.store']) !!}-->
                 <!--出身地は{!! Form::text('birthplace') !!}だよ。-->
                 <!--    {!! Form::submit('追加', ['class' => 'btn btn-primary']) !!}-->

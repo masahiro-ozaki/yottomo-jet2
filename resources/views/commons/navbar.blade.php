@@ -1,6 +1,13 @@
+<style>
+.navbar{
+    background-image: url("yottomo-jet-image/profilebackground.png");
+}
+</style>
+
 <header>
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
+            <section class="navbar">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -33,6 +40,7 @@
                     @endif
                 </ul>
             </div>
+            </section>
         </div>
     </nav>
 </header>
