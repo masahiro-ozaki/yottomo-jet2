@@ -40,7 +40,7 @@
     
     body {
           background-color: #486d46;
-          background-image: url("yottomo-jet-image/tukue2.jpg");
+          background-image: url("../../yottomo-jet-image/tukue2.jpg");
           background-size: cover;
           background-attachment: fixed;
           background-position: center center;
