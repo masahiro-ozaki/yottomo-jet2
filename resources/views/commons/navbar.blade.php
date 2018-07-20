@@ -2,6 +2,15 @@
 /*.navbar{*/
 /*    background-image: url("../../yottomo-jet-image/profilebackground.png");*/
 /*}*/
+
+    @font-face{
+    font-family:'HuiFontP109';
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot');
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot?#iefix') format('embedded-opentype'),
+    url('https://dl.dropboxusercontent.com/s/7pscemjdvt0wyiq/HuiFontP109.woff') format('woff'),
+    url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
+    url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
+    }
 </style>
 
 <header>
@@ -15,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><span style="font : normal 900 20pt 'Monotype Corsiva'">Yottomo-Tinder</span></a>
+                <a class="navbar-brand" href="/"><span style="font : normal 900 20pt 'HuiFontP109'">ときめきフレンズ</span></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
