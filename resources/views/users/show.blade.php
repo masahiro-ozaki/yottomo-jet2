@@ -191,7 +191,7 @@
                     
                     <section class="profile">
                         私の誕生日は[_<span class="output">{!! $user->birthday !!}</span>_]で、
-                        [_<span class="output">{!! $user->birthplace !!}</span>_]だよ。<br>
+                        出身地は[_<span class="output">{!! $user->birthplace !!}</span>_]だよ。<br>
                         性格は[_<span class="output">{!! $user->character1 !!}</span>_]と思っているんだけど、
                         まわりからは[_<span class="output">{!! $user->character2 !!}</span>_]って言われるよ。<br>
                         そんな私の趣味は、[_<span class="output">{!! $user->hobby !!}</span>_]で、
