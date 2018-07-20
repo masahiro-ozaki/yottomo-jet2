@@ -143,10 +143,6 @@
                         </div>
                         </section>
                         
-                        <div class="pull-right">
-                            @include('user_friend.friend_button', ['user' => $user])
-                        </div>
-                        
                         <div class="panel-heading" >
                             PROFILE
                         </div>
@@ -185,16 +181,6 @@
                         </div>
                 </div>
                 </section>
-                <!--{!! Form::model($user, ['route' => 'profiles.store']) !!}-->
-                <!--出身地は{!! Form::text('birthplace') !!}だよ。-->
-                <!--    {!! Form::submit('追加', ['class' => 'btn btn-primary']) !!}-->
-                <!--{!! Form::close() !!}-->
-                
-                <!--<div class="pull-right">-->
-                <!--    @if (Auth::id() == $user->id)-->
-                <!--        {!! link_to_route('users.show', ' 更新する', ['id' => $user->id], ['class' => 'btn btn-primary glyphicon glyphicon-pencil']) !!}-->
-                <!--    @endif-->
-                <!--</div>-->
             </div>
         </div>
     </div>
