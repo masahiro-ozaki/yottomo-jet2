@@ -177,64 +177,60 @@
     @else
     
         
-             <div class="row">
-                <!--<div class="col-xs-12">-->
-                    <div class="col-xs-offset-8 col-xs-1">
-                        <div class='btn'>
-                            {!! link_to_route('login', 'Login', null) !!}
-                        </div>
-                    </div>
-                    <div class="col-xs-offset-10 col-xs-1">
-                        <img src="yottomo-jet-image/jet.jpg" class="img-responsive">
-                    </div>
+    <div class="row">
+          <div class="col-xs-offset-8 col-xs-1">
+              <div class='btn'>
+                  {!! link_to_route('login', 'Login', null) !!}
+              </div>
+          </div>
+          <div class="col-xs-offset-10 col-xs-1">
+              <img src="yottomo-jet-image/jet.jpg" class="img-responsive">
+          </div>
+            
+          <div class="col-xs-10 col-xs-offset-2">
+            <section class='panel-heading1'>ときめき<br></section> 
+            <div class="col-xs-10 col-xs-offset-2"><section class='panel-heading2'>フレンズ<br></section></div>
+            <div class="col-xs-9 col-xs-offset-3"><section class='panel-heading3'>～forever with you～<br></section></div>
+          </div>
                     
-                    <div class="col-xs-10 col-xs-offset-2">
-                      <section class='panel-heading1'>ときめき<br></section> 
-                      <div class="col-xs-10 col-xs-offset-2"><section class='panel-heading2'>フレンズ<br></section></div>
-                      <div class="col-xs-9 col-xs-offset-3"><section class='panel-heading3'>～forever with you～<br></section></div>
-                    </div>
-                    
-                    <div class="col-xs-12">
-                      <section class='flex'>
+          <div class="col-xs-12">
+            <section class='flex'>
                         
-                          <figure  class="box" ontouchstart="">
-                            <img src="/yottomo-jet-image/tukue2.jpg" />
-                            <figcaption>
-                              <h3>ときめきフレンズとは？？</h3><br>
-                              <p>同期ともっと仲良くなれるアプリだよ☆彡</p>
-                            </figcaption>
-                          </figure>
-                          
-                          <figure  class="box2" ontouchstart="">
-                            <img src="/yottomo-jet-image/tukue2.jpg" />
-                            <figcaption>
-                              <h3>同期と仲良くなるにはどうしたらいいの？？</h3><br>
-                              <p>いろんな人に“友達になりたい”ボタンを押してみよう！</p>
-                            </figcaption>
-                          </figure>
-                          
-                          <figure  class="box3" ontouchstart="">
-                            <img src="/yottomo-jet-image/tukue2.jpg" />
-                            <figcaption>
-                              <h3>同期に“友達になりたい”ボタンを押すとどうなるの？？</h3><br>
-                              <p>お互いが“友達になりたい”ボタンを押すとマッチングするよ！</p>
-                            </figcaption>
-                          </figure>
-                          
-                          <figure  class="box4" ontouchstart="">
-                            <img src="/yottomo-jet-image/tukue2.jpg" />
-                            <figcaption>
-                              <h3>“友達になりたい”ボタンを押してもらうにはどうすればいいかな？？</h3><br>
-                              <p>自分のプロフィールを書いてみんなにアピールしよう！</p>
-                            </figcaption>
-                          </figure>
-                          
-                    </section>
-                    </div>
-                <!--</div> -->
-            </div>     
+                <figure  class="box" ontouchstart="">
+                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <figcaption>
+                    <h3>ときめきフレンズとは？？</h3><br>
+                    <p>同期ともっと仲良くなれるアプリだよ☆彡</p>
+                  </figcaption>
+                </figure>
+                  
+                <figure  class="box2" ontouchstart="">
+                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <figcaption>
+                    <h3>同期と仲良くなるには<br>どうしたらいいの？？</h3><br>
+                    <p>いろんな人に<br>“友達になる！”ボタン<br>を押してみよう！</p>
+                  </figcaption>
+                </figure>
+                  
+                <figure  class="box3" ontouchstart="">
+                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <figcaption>
+                    <h3>同期に“友達になる！”<br>ボタンを押すとどうなるの？？</h3><br>
+                    <p>お互いがそのボタンを<br>押すとマッチングするよ！</p>
+                  </figcaption>
+                </figure>
+                  
+                <figure  class="box4" ontouchstart="">
+                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <figcaption>
+                    <h3>“友達になる！”ボタン<br>を押してもらうためには<br>どうすればいいかな？？</h3><br>
+                    <p>自分のプロフィールを<br>書いてみんなにアピールしよう！</p>
+                  </figcaption>
+                </figure>
+                
+            </section>
+          </div>
         
-    
-    
+    </div>     
     @endif
 @endsection
