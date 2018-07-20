@@ -462,9 +462,9 @@
                 <!--<div class="col-xs-12">-->
                     <div class="img">
                     <div class="text-right">
-                        <div class='btn1'>
-                            {!! link_to_route('signup.get', 'Signup', null) !!}
-                        </div>
+                        <!--<div class='btn1'>-->
+                        <!--    {!! link_to_route('signup.get', 'Signup', null) !!}-->
+                        <!--</div>-->
                         <div class='btn2'>
                             {!! link_to_route('login', 'Login', null) !!}
                         </div>

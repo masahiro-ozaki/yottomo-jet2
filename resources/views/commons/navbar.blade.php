@@ -44,8 +44,8 @@
                             </ul>
                         </li>
                     @else
-                        <li>{!! link_to_route('signup.get', ' Signup', null, ['class' => 'glyphicon glyphicon-home']) !!}</li>
-                        <li>{!! link_to_route('login', ' Login', null, ['class' => 'glyphicon glyphicon-log-in']) !!}</li>
+                        <!--<li>{!! link_to_route('signup.get', ' Signup', null, ['class' => 'glyphicon glyphicon-home']) !!}</li>-->
+                        <!--<li>{!! link_to_route('login', ' Login', null, ['class' => 'glyphicon glyphicon-log-in']) !!}</li>-->
                     @endif
                 </ul>
             </div>

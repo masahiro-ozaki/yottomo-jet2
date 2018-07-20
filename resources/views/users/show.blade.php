@@ -98,6 +98,29 @@
     /*  text-decoration: none;*/
     /*  text-align: center;*/
     /*}*/
+    
+    .output{
+        font-weight: bold;
+    }
+    
+    .center {
+        opacity: 0.9;
+        /*color: rgba(0,0,0,1);*/
+    }
+    
+    .panel-title li{
+        font-family:'HuiFontP109';
+        font-size: 50px;
+        font-weight: bold;
+        list-style:none;
+    }
+    
+    .panel-team li{
+        font-family:'HuiFontP109';
+        font-size: 40px;
+        font-weight: bold;
+        list-style:none;
+    }
 </style>
 
 @extends('layouts.app')
@@ -145,29 +168,40 @@
                             <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->name, 200) }}" alt="">
                         </div>
                     </div>
-                    </section>
                     
                     <div class="pull-right">
                         @include('user_friend.friend_button', ['user' => $user])
                         @include('user_friend.zuttomo_button', ['user' => $user])
                     </div>
                     
-                     <div class="panel-heading" >
+                    </section>
+                    
+                    
+                    <div class="panel-heading" >
                         PROFILE
                     </div>
                     <div class="panel-title">
-                        <h2>{{ $user->name }}<br> ({{ $user->hometeam }},{{ $user->codingteam }})</h2>
+                        <li>{{ $user->name }}</li>
+                    </div>    
+                    <div class="panel-team">
+                        <li>({{ $user->hometeam }},{{ $user->codingteam }})</li>
                     </div>
                         
+                    <br>
+                    
                     <section class="profile">
-                        私の誕生日は[_{!! $user->birthday !!}_]で、出身地は[_{!! $user->birthplace !!}_]だよ。<br>
-                        性格は[_{!! $user->character1 !!}_]と思っているんだけど、まわりからは[_{!! $user->character2 !!}_]って言われるよ。<br>
-                        そんな私の趣味は、[_{!! $user->hobby !!}_]で、チャームポイントは[_{!! $user->charmpoint !!}_]なんだ。<br>
-                        将来の夢は[_{!! $user->dream !!}_]で、好きなアプリは[_{!! $user->app !!}_]だよ。<br> 
-                        私の[_{!! $user->ranktitle !!}_]ランキングを発表するよ！<br>
-                        第1位[_{!! $user->rank1 !!}_]<br>
-                        第2位[_{!! $user->rank2 !!}_]<br>
-                        第3位[_{!! $user->rank3 !!}_]<br>
+                        私の誕生日は[_<span class="output">{!! $user->birthday !!}</span>_]で、
+                        [_<span class="output">{!! $user->birthplace !!}</span>_]だよ。<br>
+                        性格は[_<span class="output">{!! $user->character1 !!}</span>_]と思っているんだけど、
+                        まわりからは[_<span class="output">{!! $user->character2 !!}</span>_]って言われるよ。<br>
+                        そんな私の趣味は、[_<span class="output">{!! $user->hobby !!}</span>_]で、
+                        チャームポイントは[_<span class="output">{!! $user->charmpoint !!}</span>_]なんだ。<br>
+                        将来の夢は[_<span class="output">{!! $user->dream !!}</span>_]で、
+                        好きなアプリは[_<span class="output">{!! $user->app !!}</span>_]だよ。<br> 
+                        私の[_<span class="output">{!! $user->ranktitle !!}</span>_]ランキングを発表するよ！<br>
+                        第1位[_<span class="output">{!! $user->rank1 !!}</span>_]<br>
+                        第2位[_<span class="output">{!! $user->rank2 !!}</span>_]<br>
+                        第3位[_<span class="output">{!! $user->rank3 !!}</span>_]<br>
                         よろしくね！<br><br>
                         自由記述欄
                         <div class='panel panel-info scroll' style="height: 10vh;">

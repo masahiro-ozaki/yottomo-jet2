@@ -47,19 +47,19 @@
 
             {!! Form::open(['route' => 'login.post']) !!}
                 <div class="form-group">
-                    {!! Form::label('name', 'なまえ') !!}
+                    {!! Form::label('name', 'なまえ(ニックネーム)') !!}
                     {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password', 'パスワード') !!}
+                    {!! Form::label('password', 'パスワード(社員番号)') !!}
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
 
                 {!! Form::submit('ログイン！', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
 
-            <p>New user? {!! link_to_route('signup.get', 'Sign up now!') !!}</p>
+            <p>18卒以外の方は {!! link_to_route('signup.get', 'こちらから') !!}</p>
         </div>
     </div>
     </div>

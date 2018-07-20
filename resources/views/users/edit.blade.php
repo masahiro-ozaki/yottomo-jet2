@@ -89,6 +89,11 @@
         width: 100%;
     
     }
+    
+    .center {
+        opacity: 0.9;
+        /*color: rgba(0,0,0,1);*/
+    }
 
 </style>
 
