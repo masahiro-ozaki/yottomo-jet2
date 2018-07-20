@@ -153,7 +153,7 @@
                         {!! Form::model($user, ['route' => ['profiles.update', 'id' => $user->id], 'method' => 'put']) !!}
                         <div class="profile">
                             <section class="text">
-                            私は{!! Form::textarea('birthday') !!}生まれで、出身地は{!! Form::textarea('birthplace') !!}だよ。<br>
+                            私の誕生日は{!! Form::textarea('birthday') !!}で、出身地は{!! Form::textarea('birthplace') !!}だよ。<br>
                             性格は{!! Form::textarea('character1') !!}と思っているんだけど、<br>
                             まわりからは{!! Form::textarea('character2') !!}って言われるよ。<br>
                             そんな私の趣味は、{!! Form::textarea('hobby') !!}で、<br>

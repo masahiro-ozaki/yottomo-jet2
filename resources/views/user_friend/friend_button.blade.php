@@ -5,7 +5,7 @@
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['user.friend', $user->id]]) !!}
-            {!! Form::submit('友達になりたい', ['class' => "btn btn-primary btn-xs"]) !!}
+            {!! Form::submit('友達になる！', ['class' => "btn btn-primary btn-xs"]) !!}
         {!! Form::close() !!}
     @endif
 @endif

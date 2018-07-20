@@ -18,12 +18,13 @@
                     <div class="panel panel default">
                         <li class="media">
                             <div class="panel-heading">
-                                <img class="media-object img-rounded" src="{{ Gravatar::src($user->name, 50) }}" alt="">
+                                <div class="col-xs-6"><img class="media-object img-rounded" src="{{ Gravatar::src($user->name, 50) }}" alt=""></div>
+                                <div class="col-xs-6"><b>{{ $user->name }}</b></div>
                             </div>
                             <div class="media-body">
                                 <div class="panel-body">
                                     <div>
-                                        <p class="users-title"><b>{{ $user->name }}</b>【{{ $user->hometeam }}】【{{ $user->codingteam }}】</p>
+                                        <p class="users-title">【{{ $user->hometeam }}】【{{ $user->codingteam }}】</p>
                                     </div>
                                     <div>
                                         <p>私の趣味は、[{{ $user->hobby }}]で、チャームポイントは[{{ $user->charmpoint }}]なんだ。</p>
@@ -31,7 +32,7 @@
                                     <div>
                                         <p>{!! link_to_route('users.show', 'View profile', ['id' => $user->id]) !!}</p>
                                     </div>
-                                    <div class="buttons">
+                                    <div>
                                         @include('user_friend.friend_button', ['user' => $user])
                                         @include('user_friend.zuttomo_button', ['user' => $user])
                                     </div>

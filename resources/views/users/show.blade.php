@@ -160,7 +160,7 @@
                     </div>
                         
                     <section class="profile">
-                        私は[_{!! $user->birthday !!}_]生まれで、出身地は[_{!! $user->birthplace !!}_]だよ。<br>
+                        私の誕生日は[_{!! $user->birthday !!}_]で、出身地は[_{!! $user->birthplace !!}_]だよ。<br>
                         性格は[_{!! $user->character1 !!}_]と思っているんだけど、まわりからは[_{!! $user->character2 !!}_]って言われるよ。<br>
                         そんな私の趣味は、[_{!! $user->hobby !!}_]で、チャームポイントは[_{!! $user->charmpoint !!}_]なんだ。<br>
                         将来の夢は[_{!! $user->dream !!}_]で、好きなアプリは[_{!! $user->app !!}_]だよ。<br> 
