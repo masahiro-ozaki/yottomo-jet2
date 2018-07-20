@@ -15,6 +15,7 @@
         
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
         <style type="text/css">
+          
           body {
               background: url('yottomo-jet-image/background.jpg') no-repeat; 
               background-size: cover;
@@ -24,16 +25,16 @@
             display: inline-block;
             text-decoration: none;
             color: #668ad8;
-            width: 110px;
-            height: 110px;
+            width: 380px;
+            height: 100px;
             line-height: 80px;
-            border-radius: 50%;
+            /*border-radius: 50%;*/
             border: double 6px #668ad8;
             text-align: center;
             vertical-align: middle;
             overflow: hidden;
             transition: .6s;
-            font-size:170%;
+            font-size: 30px;
             font-weight:bold;
             align-items: center;
           }
@@ -84,7 +85,7 @@
           figure {
             position: relative;
             overflow: hidden;
-            width: 270px;
+            width: 560px;
             height: 320px;
           }
           
@@ -173,7 +174,6 @@
           url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
           url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
           }
-          
         </style>
     </head>
     <!--------------------------------------------------------------------ヘッダーここまで-------------------------------------------------------------------->
@@ -188,11 +188,6 @@
         @else
         
         <div class="row">
-          <div class="col-xs-offset-11 col-xs-1">
-              <div class='btn'>
-                  {!! link_to_route('login', 'Login', null) !!}
-              </div>
-          </div>
             
           <div class="col-xs-7 col-xs-offset-1">
             <section class='panel-heading1'>ときめき<br></section> 
@@ -204,9 +199,10 @@
               <img src="yottomo-jet-image/jet.jpg" class="img-responsive">
           </div>
                     
-          <div class="col-xs-12">
+          <div class="frame col-xs-12">
             <section class='flex'>
-                        
+                
+                <div class="col-xs-6">        
                 <figure  class="box" ontouchstart="">
                   <img src="/yottomo-jet-image/tukue2.jpg" />
                   <figcaption>
@@ -214,15 +210,19 @@
                     <p>同期ともっと仲良くなれるアプリだよ☆彡</p>
                   </figcaption>
                 </figure>
-                  
+                </div>
+                
+                <div class="col-xs-6 col-xs-offset-6">
                 <figure  class="box2" ontouchstart="">
-                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <img src="/yottomo-jet-image/button.png" />
                   <figcaption>
                     <h3>同期と仲良くなるには<br>どうしたらいいの？？</h3><br>
                     <p>いろんな人に<br>“友達になる！”ボタン<br>を押してみよう！</p>
                   </figcaption>
                 </figure>
-                  
+                </div>
+                
+                <div class="col-xs-6">  
                 <figure  class="box3" ontouchstart="">
                   <img src="/yottomo-jet-image/tukue2.jpg" />
                   <figcaption>
@@ -230,7 +230,9 @@
                     <p>お互いがそのボタンを<br>押すとマッチングするよ！</p>
                   </figcaption>
                 </figure>
-                  
+                </div>
+                
+                <div class="col-xs-6 col-xs-offset-6">  
                 <figure  class="box4" ontouchstart="">
                   <img src="/yottomo-jet-image/tukue2.jpg" />
                   <figcaption>
@@ -238,10 +240,21 @@
                     <p>自分のプロフィールを<br>書いてみんなにアピールしよう！</p>
                   </figcaption>
                 </figure>
+                </div>
                 
             </section>
           </div>
-        
+          <div class="col-xs-12">
+            <p><br></p>
+          </div>
+          <div class="col-xs-offset-4 col-xs-4">
+              <div class='btn'>
+                  {!! link_to_route('login', 'はじめよう！', null) !!}
+              </div>
+          </div>
+          <div class="col-xs-12">
+            <p><br></p>
+          </div>
         </div>     
         @endif
       </div>
