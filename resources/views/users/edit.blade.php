@@ -94,7 +94,10 @@
         opacity: 0.9;
         /*color: rgba(0,0,0,1);*/
     }
-
+    
+    .badge {
+        font-family:'Meiryo';
+    }
 </style>
 
 @extends('layouts.app')
@@ -174,7 +177,7 @@
                             
                             <div class="pull-right">
                                 @if (Auth::id() == $user->id)
-                                    {!! Form::submit('更新する', ['class' => 'btn btn-info']) !!}
+                                    {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
                                 @endif
                             </div>
                         {!! Form::close() !!}

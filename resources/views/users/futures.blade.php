@@ -61,6 +61,10 @@
         font-family:'HuiFontP109';
         font-size: 50px;
     }
+    
+    .badge {
+        font-family:'Meiryo';
+    }
 </style>
 
 @extends('layouts.app')

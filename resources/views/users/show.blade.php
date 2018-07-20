@@ -121,6 +121,10 @@
         font-weight: bold;
         list-style:none;
     }
+    
+    .badge {
+        font-family:'Meiryo';
+    }
 </style>
 
 @extends('layouts.app')
@@ -179,6 +183,9 @@
                     
                     <div class="panel-heading" >
                         PROFILE
+                        @if (Auth::id() == $user->id)
+                        {!! link_to_route('users.edit', ' 編集する', ['id' => $user->id], ['class' => 'btn btn-primary glyphicon glyphicon-pencil']) !!}
+                        @endif
                     </div>
                     <div class="panel-title">
                         <li>{{ $user->name }}</li>
@@ -211,11 +218,6 @@
                         <!--最後に一言、[________]。よろしくね！<br>-->
                         
                     </section>
-                </div>
-                <div class="pull-right">
-                    @if (Auth::id() == $user->id)
-                        {!! link_to_route('users.edit', ' 編集する', ['id' => $user->id], ['class' => 'btn btn-primary glyphicon glyphicon-pencil']) !!}
-                    @endif
                 </div>
             </div>
         </div>

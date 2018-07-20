@@ -51,36 +51,103 @@
             flex-wrap: wrap;
           }
           
-           .panel-heading1 {
+          .panel-heading1 {
               font-family:'HuiFontP109';
-              font-size: 700%;
+              font-size: 30px;
               color:#75A9FF;
               font-weight:bold;
           }
           
            .panel-heading2 {
               font-family:'HuiFontP109';
-              font-size: 700%;
+              font-size: 30px;
               color:#FF33FF;
               font-weight:bold;
+              
           }
           .panel-heading3 {
               font-family:'HuiFontP109';
-              font-size: 300%;
+              font-size: 20px;
               color:#5507FF;
           }
           
-           .panel-heading {
+          @media screen and (min-width:651px) {　/* 中画面用 */
+          
+            .panel-heading1 {
               font-family:'HuiFontP109';
-              font-size: 100%;
-              color: black;
+              font-size: 60px;
+              color:#75A9FF;
+              font-weight:bold;
+            }
+            
+            .panel-heading2 {
+              font-family:'HuiFontP109';
+              font-size: 60px;
+              color:#FF33FF;
+              font-weight:bold;
+                
+            }
+            .panel-heading3 {
+              font-family:'HuiFontP109';
+              font-size: 30px;
+              color:#5507FF;
+            }
+          }
+       
+          @media screen and (min-width:961px) {　/* 大画面用 */
+            .panel-heading1 {
+              font-family:'HuiFontP109';
+              font-size: 100px;
+              color:#75A9FF;
+              font-weight:bold;
+            }
+            
+            .panel-heading2 {
+              font-family:'HuiFontP109';
+              font-size: 100px;
+              color:#FF33FF;
+              font-weight:bold;
+                
+            }
+            .panel-heading3 {
+              font-family:'HuiFontP109';
+              font-size: 50px;
+              color:#5507FF;
+            }
           }
           
-          h4 .panel-heading {
-              font-family:'HuiFontP109';
-              font-size: 20px;
-              color: black;
-          }
+           /**/
+          
+          /* .panel-heading1 {*/
+          /*    font-family:'HuiFontP109';*/
+          /*    font-size: 700%;*/
+          /*    color:#75A9FF;*/
+          /*    font-weight:bold;*/
+          /*}*/
+          
+          /* .panel-heading2 {*/
+          /*    font-family:'HuiFontP109';*/
+          /*    font-size: 700%;*/
+          /*    color:#FF33FF;*/
+          /*    font-weight:bold;*/
+          /*}*/
+          /*.panel-heading3 {*/
+          /*    font-family:'HuiFontP109';*/
+          /*    font-size: 300%;*/
+          /*    color:#5507FF;*/
+          /*}*/
+          
+          /* .panel-heading {*/
+          /*    font-family:'HuiFontP109';*/
+          /*    font-size: 100%;*/
+          /*    color: black;*/
+          /*}*/
+          
+          /*h4 .panel-heading {*/
+          /*    font-family:'HuiFontP109';*/
+          /*    font-size: 20px;*/
+          /*    color: black;*/
+          /*}*/
           
           figure {
             position: relative;
@@ -175,6 +242,8 @@
           url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
           }
         </style>
+        
+        
     </head>
     <!--------------------------------------------------------------------ヘッダーここまで-------------------------------------------------------------------->
     <!----------------------------------------------------------------------Bodyここから---------------------------------------------------------------------->
@@ -196,7 +265,7 @@
           </div>
           
           <div class="col-xs-3">
-              <img src="yottomo-jet-image/jet.jpg" class="img-responsive">
+              <img src="yottomo-jet-image/jet3.png" class="img-responsive">
           </div>
                     
           <div class="frame col-xs-12">
@@ -204,7 +273,7 @@
                 
                 <div class="col-xs-6">        
                 <figure  class="box" ontouchstart="">
-                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <img src="/yottomo-jet-image/nakayoshi.jpg" />
                   <figcaption>
                     <h3>ときめきフレンズとは？？</h3><br>
                     <p>同期ともっと仲良くなれるアプリだよ☆彡</p>
@@ -224,7 +293,7 @@
                 
                 <div class="col-xs-6">  
                 <figure  class="box3" ontouchstart="">
-                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <img src="/yottomo-jet-image/match.jpg" />
                   <figcaption>
                     <h3>同期に“友達になる！”<br>ボタンを押すとどうなるの？？</h3><br>
                     <p>お互いがそのボタンを<br>押すとマッチングするよ！</p>
@@ -234,7 +303,7 @@
                 
                 <div class="col-xs-6 col-xs-offset-6">  
                 <figure  class="box4" ontouchstart="">
-                  <img src="/yottomo-jet-image/tukue2.jpg" />
+                  <img src="/yottomo-jet-image/profile.jpg" />
                   <figcaption>
                     <h3>“友達になる！”ボタン<br>を押してもらうためには<br>どうすればいいかな？？</h3><br>
                     <p>自分のプロフィールを<br>書いてみんなにアピールしよう！</p>
