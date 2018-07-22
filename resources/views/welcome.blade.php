@@ -25,16 +25,16 @@
             display: inline-block;
             text-decoration: none;
             color: #668ad8;
-            width: 380px;
-            height: 100px;
-            line-height: 80px;
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*line-height: 80px;*/
             /*border-radius: 50%;*/
             border: double 6px #668ad8;
             text-align: center;
             vertical-align: middle;
             overflow: hidden;
             transition: .6s;
-            font-size: 30px;
+            /*font-size: 30px;*/
             font-weight:bold;
             align-items: center;
           }
@@ -152,8 +152,8 @@
           figure {
             position: relative;
             overflow: hidden;
-            width: 560px;
-            height: 320px;
+            width: 100%;
+            height: 100%;
           }
           
           figcaption {
@@ -173,7 +173,7 @@
           figcaption p {
             position: absolute;
             left: -100%;
-            width: 260px;
+            width: 100%;
             -webkit-transition: .3s;
             transition: .3s;
             font-family:'HuiFontP109';
@@ -186,7 +186,7 @@
           }
           
           figcaption p {
-            top: 170px;
+            top: 120px;
             color:white;
             font-family:'HuiFontP109';
             font-size:25px;
@@ -259,7 +259,7 @@
         <div class="row">
             
           <div class="col-xs-7 col-xs-offset-1">
-            <section class='panel-heading1'>ときめき<br></section> 
+            <div class="col-xs-11 col-xs-offset-1"><section class='panel-heading1'>ときめき<br></section></div>
             <div class="col-xs-10 col-xs-offset-2"><section class='panel-heading2'>フレンズ<br></section></div>
             <div class="col-xs-9 col-xs-offset-3"><section class='panel-heading3'>～forever with you～<br></section></div>
           </div>
@@ -268,45 +268,45 @@
               <img src="yottomo-jet-image/jet3.png" class="img-responsive">
           </div>
                     
-          <div class="frame col-xs-12">
+          <div class="col-xs-12">
             <section class='flex'>
                 
-                <div class="col-xs-6">        
+                <div class="col-xs-12 col-sm-6">        
                 <figure  class="box" ontouchstart="">
                   <img src="/yottomo-jet-image/nakayoshi.jpg" />
                   <figcaption>
-                    <h3>ときめきフレンズとは？？</h3><br>
+                    <h3>ときめきフレンズとは？？</h3>
                     <p>同期ともっと仲良くなれるアプリだよ☆彡</p>
                   </figcaption>
                 </figure>
                 </div>
                 
-                <div class="col-xs-6 col-xs-offset-6">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-6">
                 <figure  class="box2" ontouchstart="">
                   <img src="/yottomo-jet-image/button.png" />
                   <figcaption>
-                    <h3>同期と仲良くなるには<br>どうしたらいいの？？</h3><br>
-                    <p>いろんな人に<br>“友達になる！”ボタン<br>を押してみよう！</p>
+                    <h3>同期と仲良くなるにはどうしたらいいの？？</h3>
+                    <p>いろんな人に“友達になる！”ボタンを押してみよう！</p>
                   </figcaption>
                 </figure>
                 </div>
                 
-                <div class="col-xs-6">  
+                <div class="col-xs-12 col-sm-6">  
                 <figure  class="box3" ontouchstart="">
-                  <img src="/yottomo-jet-image/match.jpg" />
+                  <img src="/yottomo-jet-image/matching.jpg" />
                   <figcaption>
-                    <h3>同期に“友達になる！”<br>ボタンを押すとどうなるの？？</h3><br>
-                    <p>お互いがそのボタンを<br>押すとマッチングするよ！</p>
+                    <h3>同期に“友達になる！”ボタンを押すとどうなるの？？</h3>
+                    <p>お互いがそのボタンを押すとマッチングするよ！</p>
                   </figcaption>
                 </figure>
                 </div>
                 
-                <div class="col-xs-6 col-xs-offset-6">  
+                <div class="col-xs-12 col-sm-6 col-sm-offset-6">  
                 <figure  class="box4" ontouchstart="">
                   <img src="/yottomo-jet-image/profile.jpg" />
                   <figcaption>
-                    <h3>“友達になる！”ボタン<br>を押してもらうためには<br>どうすればいいかな？？</h3><br>
-                    <p>自分のプロフィールを<br>書いてみんなにアピールしよう！</p>
+                    <h3>“友達になる！”ボタンを押してもらうためには<br>どうすればいいの？？</h3>
+                    <p>自分のプロフィールを書いてみんなにアピール！</p>
                   </figcaption>
                 </figure>
                 </div>
@@ -316,7 +316,7 @@
           <div class="col-xs-12">
             <p><br></p>
           </div>
-          <div class="col-xs-offset-4 col-xs-4">
+          <div class="col-xs-offset-3 col-xs-4 col-sm-offset-5 col-sm-4">
               <div class='btn'>
                   {!! link_to_route('login', 'はじめよう！', null) !!}
               </div>
