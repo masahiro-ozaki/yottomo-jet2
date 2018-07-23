@@ -47,6 +47,10 @@
             transform: rotateY(360deg);
           }
           
+          a:hover {
+          text-decoration: none;
+          }
+          
           section.flex{
             display: flex;
             flex-direction: row;
@@ -73,6 +77,10 @@
               font-size: 20px;
               color:#5507FF;
             }
+            
+          a {
+            font-size: 20px;
+          }
           }
           
           @media screen and (min-width:480px) {
@@ -92,6 +100,10 @@
               font-family:'HuiFontP109';
               font-size: 30px;
               color:#5507FF;
+            }
+            
+            a {
+              font-size: 20px;
             }
           }
           
@@ -115,6 +127,10 @@
               font-size: 30px;
               color:#5507FF;
             }
+            
+            a {
+              font-size: 20px;
+            }
           }
        
           @media screen and (min-width:961px) {
@@ -136,6 +152,10 @@
               font-family:'HuiFontP109';
               font-size: 50px;
               color:#5507FF;
+            }
+            
+            a {
+              font-size: 40px;
             }
           }
           
@@ -379,7 +399,7 @@
           </div>
           <div class="col-xs-offset-3 col-xs-4 col-sm-offset-5 col-sm-4">
               <div class='btn'>
-                  {!! link_to_route('login', 'はじめよう！', null) !!}
+                  {!! link_to_route('login', 'はじめる', null) !!}
               </div>
           </div>
           <div class="col-xs-12">
