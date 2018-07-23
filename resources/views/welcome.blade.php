@@ -383,7 +383,7 @@
           .slider__txt {
             color: #999;
             margin-bottom: 3rem;
-            max-width: 300px;
+            max-width: 350px;
           }
           
           @-webkit-keyframes check {
@@ -424,40 +424,40 @@
             {{ $user->name }}
         @else
         
-        <div class="slider">
-          <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide4" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide5" class="slider__nav"/>
-          <div class="slider__inner">
-            <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
-              <img src="/yottomo-jet-image/tokimeki2.png" />
-              <h2 class="slider__caption">ときめきフレンズとは？？</h2>
-              <p class="slider__txt">同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>
-            </div>
-            <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
-              <img src="/yottomo-jet-image/button2-1.png" />
-              <h2 class="slider__caption">どうやって使うの？？</h2>
-              <p class="slider__txt">仲良くなりたい人に‘気になる！’ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
-            </div>
-            <div class="slider__contents"><i class="slider__image fa fa-television"></i>
-              <img src="/yottomo-jet-image/matching2.png" />
-              <h2 class="slider__caption">マッチングしたかはどうやってわかるの？？</h2>
-              <p class="slider__txt">My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
-            </div>
-            <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
-              <img src="/yottomo-jet-image/users2.png" />
-              <h2 class="slider__caption">どうやって友達になりたい同期を探すの？？</h2>
-              <p class="slider__txt">同期一覧から探すことができるよ！<br>名前をクリックすると詳しいプロフィールが見れるよ！</p>
-            </div>
-            <div class="slider__contents"><i class="slider__image fa fa-diamond2"></i>
-              <img src="/yottomo-jet-image/profile2.png">
-              <h2 class="slider__caption">マッチングするためにはどうすればいいの？？</h2>
-              <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
-            </div>
-          </div>
-        </div>
+        <!--<div class="slider">-->
+        <!--  <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>-->
+        <!--  <input type="radio" name="slider" title="slide2" class="slider__nav"/>-->
+        <!--  <input type="radio" name="slider" title="slide3" class="slider__nav"/>-->
+        <!--  <input type="radio" name="slider" title="slide4" class="slider__nav"/>-->
+        <!--  <input type="radio" name="slider" title="slide5" class="slider__nav"/>-->
+        <!--  <div class="slider__inner">-->
+        <!--    <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>-->
+        <!--      <img src="/yottomo-jet-image/tokimeki2.png" />-->
+        <!--      <h2 class="slider__caption">ときめきフレンズとは？？</h2>-->
+        <!--      <p class="slider__txt">同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>-->
+        <!--    </div>-->
+        <!--    <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>-->
+        <!--      <img src="/yottomo-jet-image/button2-1.png" />-->
+        <!--      <h2 class="slider__caption">どうやって使うの？？</h2>-->
+        <!--      <p class="slider__txt">仲良くなりたい人に‘気になる！'ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>-->
+        <!--    </div>-->
+        <!--    <div class="slider__contents"><i class="slider__image fa fa-television"></i>-->
+        <!--      <img src="/yottomo-jet-image/matching2.png" />-->
+        <!--      <h2 class="slider__caption">マッチングしたかはどうやってわかるの？？</h2>-->
+        <!--      <p class="slider__txt">My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>-->
+        <!--    </div>-->
+        <!--    <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>-->
+        <!--      <img src="/yottomo-jet-image/users2.png" />-->
+        <!--      <h2 class="slider__caption">どうやって友達になりたい同期を探すの？？</h2>-->
+        <!--      <p class="slider__txt">同期一覧から探すことができるよ！<br>名前のリンクから詳しいプロフィールが見れるよ！</p>-->
+        <!--    </div>-->
+        <!--    <div class="slider__contents"><i class="slider__image fa fa-diamond2"></i>-->
+        <!--      <img src="/yottomo-jet-image/profile2.png">-->
+        <!--      <h2 class="slider__caption">マッチングするためにはどうすればいいの？？</h2>-->
+        <!--      <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!--</div>-->
         
         
         <div class="row">
@@ -472,115 +472,115 @@
               <img src="yottomo-jet-image/jet3.png" class="img-responsive">
           </div>
                     
-          <!--<div class="col-xs-12">-->
-          <!--  <section class='flex'>-->
+          <div class="col-xs-12">
+            <section class='flex'>
                 <!--一つ目-->
-          <!--      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">        -->
-          <!--      <figure  class="box" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/tokimeki2.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>ときめきフレンズとは？？</h3>-->
-          <!--          <p>同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">        
+                <figure  class="box" ontouchstart="">
+                  <img src="/yottomo-jet-image/tokimeki2.png" />
+                  <figcaption>
+                    <h3>ときめきフレンズとは？？</h3>
+                    <p>同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
-          <!--      <div class="hidden-xs col-sm-8">-->
-          <!--      <figure  class="box" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/tokimeki.png" />-->
-          <!--        <figcaption>-->
-          <!--           <h3>ときめきフレンズとは？？</h3>-->
-          <!--          <p>同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="hidden-xs col-sm-8">
+                <figure  class="box" ontouchstart="">
+                  <img src="/yottomo-jet-image/tokimeki.png" />
+                  <figcaption>
+                     <h3>ときめきフレンズとは？？</h3>
+                    <p>同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
                 <!--二つ目-->
-          <!--      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">-->
-          <!--      <figure  class="box2" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/button2-1.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>どうやって使うの？？</h3>-->
-          <!--          <p>仲良くなりたい人に‘気になる！’ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                <figure  class="box2" ontouchstart="">
+                  <img src="/yottomo-jet-image/button2-1.png" />
+                  <figcaption>
+                    <h3>どうやって使うの？？</h3>
+                    <p>仲良くなりたい人に‘気になる！’ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
-          <!--      <div class="hidden-xs col-sm-8 col-sm-offset-4">-->
-          <!--      <figure  class="box2" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/button2.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>どうやって使うの？？</h3>-->
-          <!--          <p>仲良くなりたい人に‘気になる！’ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="hidden-xs col-sm-8 col-sm-offset-4">
+                <figure  class="box2" ontouchstart="">
+                  <img src="/yottomo-jet-image/button2.png" />
+                  <figcaption>
+                    <h3>どうやって使うの？？</h3>
+                    <p>仲良くなりたい人に‘気になる！’ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
                 <!--三つ目-->
-          <!--      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  -->
-          <!--      <figure  class="box3" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/matching2.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>マッチングしたかはどうやってわかるの？？</h3>-->
-          <!--          <p>My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
+                <figure  class="box3" ontouchstart="">
+                  <img src="/yottomo-jet-image/matching2.png" />
+                  <figcaption>
+                    <h3>マッチングしたかはどうやってわかるの？？</h3>
+                    <p>My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
-          <!--      <div class="hidden-xs col-sm-8">  -->
-          <!--      <figure  class="box3" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/matching.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>マッチングしたかはどうやってわかるの？？</h3>-->
-          <!--          <p>My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="hidden-xs col-sm-8">  
+                <figure  class="box3" ontouchstart="">
+                  <img src="/yottomo-jet-image/matching.png" />
+                  <figcaption>
+                    <h3>マッチングしたかはどうやってわかるの？？</h3>
+                    <p>My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
                 <!--四つ目-->
-          <!--      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  -->
-          <!--      <figure  class="box4" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/users2.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>どうやって友達になりたい同期を探すの？？</h3>-->
-          <!--          <p>同期一覧から探すことができるよ！<br>名前をクリックすると詳しいプロフィールが見れるよ！</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
+                <figure  class="box4" ontouchstart="">
+                  <img src="/yottomo-jet-image/users2.png" />
+                  <figcaption>
+                    <h3>どうやって友達になりたい同期を探すの？？</h3>
+                    <p>同期一覧から探すことができるよ！<br>名前をクリックすると詳しいプロフィールが見れるよ！</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
-          <!--      <div class="hidden-xs col-sm-8 col-sm-offset-4">-->
-          <!--      <figure  class="box4" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/users.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>どうやって友達になりたい同期を探すの？？</h3>-->
-          <!--          <p>同期一覧から探すことができるよ！<br>名前をクリックすると詳しいプロフィールが見れるよ！</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="hidden-xs col-sm-8 col-sm-offset-4">
+                <figure  class="box4" ontouchstart="">
+                  <img src="/yottomo-jet-image/users.png" />
+                  <figcaption>
+                    <h3>どうやって友達になりたい同期を探すの？？</h3>
+                    <p>同期一覧から探すことができるよ！<br>名前をクリックすると詳しいプロフィールが見れるよ！</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
                 <!--五つ目-->
-          <!--      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  -->
-          <!--      <figure  class="box5" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/profile2.png">-->
-          <!--        <figcaption>-->
-          <!--          <h3>マッチングするためにはどうすればいいの？？</h3>-->
-          <!--          <p>自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
+                <figure  class="box5" ontouchstart="">
+                  <img src="/yottomo-jet-image/profile2.png">
+                  <figcaption>
+                    <h3>マッチングするためにはどうすればいいの？？</h3>
+                    <p>自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
-          <!--      <div class="hidden-xs col-sm-8">  -->
-          <!--      <figure  class="box5" ontouchstart="">-->
-          <!--        <img src="/yottomo-jet-image/profile.png" />-->
-          <!--        <figcaption>-->
-          <!--          <h3>マッチングするためにはどうすればいいの？？</h3>-->
-          <!--          <p>自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>-->
-          <!--        </figcaption>-->
-          <!--      </figure>-->
-          <!--      </div>-->
+                <div class="hidden-xs col-sm-8">  
+                <figure  class="box5" ontouchstart="">
+                  <img src="/yottomo-jet-image/profile.png" />
+                  <figcaption>
+                    <h3>マッチングするためにはどうすればいいの？？</h3>
+                    <p>自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
+                  </figcaption>
+                </figure>
+                </div>
                 
-          <!--  </section>-->
-          <!--</div>-->
+            </section>
+          </div>
           <div class="col-xs-12">
             <p><br></p>
           </div>
