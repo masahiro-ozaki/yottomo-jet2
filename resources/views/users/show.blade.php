@@ -179,25 +179,43 @@
 
 
     .fun-btn {
-        font-family:'HuiFontP109';
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 80px;
-        padding: 0.8em;
-        text-align: center;
-        font-weight: bold;
-        text-decoration: none;
-        color: #8E24AA;
-        text-shadow: 0 0 5px white;
-        background: repeating-linear-gradient(-45deg, #CE93D8, #CE93D8 3px,#E1BEE7 3px, #E1BEE7 7px);
-        transition: .4s;
+        display: inline-block;
+        padding: .65em 3em;
+        background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);
+        background: linear-gradient(#fe5f95 , #ff3f7f);
+        border: 1px solid #fe3276;
         border-radius: 4px;
-        }
-        .fun-btn:hover {
-        background: repeating-linear-gradient(-45deg, #CE93D8, #CE93D8 5px,#E1BEE7 5px, #E1BEE7 9px);
-        transition: .4s;
-        }
+        color: #fff;
+        font-size: 25px;
+        font-family:'HuiFontP109';
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .fun-btn span {
+        position: relative;
+        display: inline-block;
+        padding-left: 1.6em;
+    }
+    .fun-btn span::before {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        content: '\002764';
+        color: #fff;
+        font-size: 30px;
+        line-height: 1;
+        -webkit-animation: icon 1.5s ease-in-out infinite;
+        animation: icon 1.5s ease-in-out infinite;
+    }
+    @-webkit-keyframes icon {
+        0% { -webkit-transform: scale(1.2); }
+    }
+    @keyframes icon {
+        100% { transform: scale(1.2); }
+    }
     
     
     aside {
@@ -288,8 +306,9 @@
                     <!--<li role="presentation" class="nav2" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">マッチング成立<span class="badge"></span></a></li>-->
                     <!--<li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>-->
                 </ul>
-                <aside><button class="fun-btn"><a href="{{ route('users.futures', ['id' => $user->id]) }}">マッチング成立一覧</a></button>
-        </aside>
+                <aside>
+                    <button class="fun-btn"><a href="{{ route('users.futures', ['id' => $user->id]) }}"><span>マッチング成立一覧</span></a></button>
+                </aside>
             @endif
              <!--
              ここにプロフィールを表示できるようにする
