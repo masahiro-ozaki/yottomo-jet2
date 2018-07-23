@@ -11,6 +11,7 @@
     url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
     url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
     }
+
 </style>
 
 <header>
@@ -42,6 +43,7 @@
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li>{!! link_to_route('users.show', ' MyProfile', ['id' => Auth::id()], ['class' => 'glyphicon glyphicon-user']) !!}</li>
+                                <li>{!! link_to_route('users.friends', ' 気になる！一覧', ['id' => Auth::id()], ['class' => 'glyphicon glyphicon-heart']) !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', ' Logout', null, ['class' => 'glyphicon glyphicon-log-out']) !!}</li>
                             </ul>

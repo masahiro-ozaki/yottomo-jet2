@@ -1,7 +1,7 @@
 @if (Auth::id() != $user->id)
     @if (Auth::user()->is_zuttomoing($user->id))
         {!! Form::open(['route' => ['user.unzuttomo', $user->id], 'method' => 'delete']) !!}
-            {!! Form::submit('絶縁する', ['class' => "btn btn-danger btn-xs"]) !!}
+            {!! Form::submit('ズッ友追加済み', ['class' => "btn btn-danger btn-xs"]) !!}
         {!! Form::close() !!}
     @else
         {!! Form::open(['route' => ['user.zuttomo', $user->id]]) !!}

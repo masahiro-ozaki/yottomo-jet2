@@ -12,13 +12,15 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
         <style type="text/css">
           
           body {
-              background: url('yottomo-jet-image/background.jpg') no-repeat; 
-              background-size: cover;
+            /*background-color:pink;*/
+            /*background: url('yottomo-jet-image/background.jpg') no-repeat; */
+            /*background-size: contain;*/
+            background: linear-gradient(-45deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)) fixed, url(http://www.webcreatorbox.com/sample/images/bg-cherrybrossam.jpg) fixed;
+            background-size: cover;
           }
           
           .btn{
@@ -51,6 +53,7 @@
             flex-wrap: wrap;
           }
           
+          @media screen and (min-width:1px) {
           .panel-heading1 {
               font-family:'HuiFontP109';
               font-size: 30px;
@@ -69,10 +72,30 @@
               font-family:'HuiFontP109';
               font-size: 20px;
               color:#5507FF;
+            }
           }
           
-          @media screen and (min-width:651px) {　/* 中画面用 */
+          @media screen and (min-width:480px) {
+            .panel-heading1 {
+              font-family:'HuiFontP109';
+              font-size: 50px;
+              color:#75A9FF;
+              font-weight:bold;
+            }
+            .panel-heading2 {
+              font-family:'HuiFontP109';
+              font-size: 50px;
+              color:#FF33FF;
+              font-weight:bold;
+            }
+            .panel-heading3 {
+              font-family:'HuiFontP109';
+              font-size: 30px;
+              color:#5507FF;
+            }
+          }
           
+          @media screen and (min-width:651px) {
             .panel-heading1 {
               font-family:'HuiFontP109';
               font-size: 60px;
@@ -94,7 +117,7 @@
             }
           }
        
-          @media screen and (min-width:961px) {　/* 大画面用 */
+          @media screen and (min-width:961px) {
             .panel-heading1 {
               font-family:'HuiFontP109';
               font-size: 100px;
@@ -116,38 +139,6 @@
             }
           }
           
-           /**/
-          
-          /* .panel-heading1 {*/
-          /*    font-family:'HuiFontP109';*/
-          /*    font-size: 700%;*/
-          /*    color:#75A9FF;*/
-          /*    font-weight:bold;*/
-          /*}*/
-          
-          /* .panel-heading2 {*/
-          /*    font-family:'HuiFontP109';*/
-          /*    font-size: 700%;*/
-          /*    color:#FF33FF;*/
-          /*    font-weight:bold;*/
-          /*}*/
-          /*.panel-heading3 {*/
-          /*    font-family:'HuiFontP109';*/
-          /*    font-size: 300%;*/
-          /*    color:#5507FF;*/
-          /*}*/
-          
-          /* .panel-heading {*/
-          /*    font-family:'HuiFontP109';*/
-          /*    font-size: 100%;*/
-          /*    color: black;*/
-          /*}*/
-          
-          /*h4 .panel-heading {*/
-          /*    font-family:'HuiFontP109';*/
-          /*    font-size: 20px;*/
-          /*    color: black;*/
-          /*}*/
           
           figure {
             position: relative;
@@ -227,6 +218,11 @@
             transition-delay: .5s;
           }
           
+          .box5:hover {
+            -webkit-transition-delay: .5s;
+            transition-delay: .5s;
+          }
+          
           .img-responsive {
             display: block;
             height: auto;
@@ -241,6 +237,7 @@
           url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
           url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
           }
+         
         </style>
         
         
@@ -248,7 +245,7 @@
     <!--------------------------------------------------------------------ヘッダーここまで-------------------------------------------------------------------->
     <!----------------------------------------------------------------------Bodyここから---------------------------------------------------------------------->
     <body>
-      <div class="container">
+      <!--<div class="container">-->
         @include('commons.error_messages')
     
         @if (Auth::check())
@@ -257,7 +254,7 @@
         @else
         
         <div class="row">
-            
+          
           <div class="col-xs-7 col-xs-offset-1">
             <div class="col-xs-11 col-xs-offset-1"><section class='panel-heading1'>ときめき<br></section></div>
             <div class="col-xs-10 col-xs-offset-2"><section class='panel-heading2'>フレンズ<br></section></div>
@@ -270,43 +267,107 @@
                     
           <div class="col-xs-12">
             <section class='flex'>
-                
-                <div class="col-xs-12 col-sm-6">        
+                <!--一つ目-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">        
                 <figure  class="box" ontouchstart="">
-                  <img src="/yottomo-jet-image/nakayoshi.jpg" />
+                  <img src="/yottomo-jet-image/tokimeki2.png" />
                   <figcaption>
                     <h3>ときめきフレンズとは？？</h3>
-                    <p>同期ともっと仲良くなれるアプリだよ☆彡</p>
+                    <p>同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>
                   </figcaption>
                 </figure>
                 </div>
                 
-                <div class="col-xs-12 col-sm-6 col-sm-offset-6">
+                <div class="hidden-xs col-sm-8">
+                <figure  class="box" ontouchstart="">
+                  <img src="/yottomo-jet-image/tokimeki.png" />
+                  <figcaption>
+                     <h3>ときめきフレンズとは？？</h3>
+                    <p>同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>
+                  </figcaption>
+                </figure>
+                </div>
+                
+                <!--二つ目-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
                 <figure  class="box2" ontouchstart="">
-                  <img src="/yottomo-jet-image/button.png" />
+                  <img src="/yottomo-jet-image/button2-1.png" />
                   <figcaption>
-                    <h3>同期と仲良くなるにはどうしたらいいの？？</h3>
-                    <p>いろんな人に“友達になる！”ボタンを押してみよう！</p>
+                    <h3>どうやって使うの？？</h3>
+                    <p>仲良くなりたい人に‘気になる！’ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
                   </figcaption>
                 </figure>
                 </div>
                 
-                <div class="col-xs-12 col-sm-6">  
+                <div class="hidden-xs col-sm-8 col-sm-offset-4">
+                <figure  class="box2" ontouchstart="">
+                  <img src="/yottomo-jet-image/button2.png" />
+                  <figcaption>
+                    <h3>どうやって使うの？？</h3>
+                    <p>仲良くなりたい人に‘気になる！’ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
+                  </figcaption>
+                </figure>
+                </div>
+                
+                <!--三つ目-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
                 <figure  class="box3" ontouchstart="">
-                  <img src="/yottomo-jet-image/matching.jpg" />
+                  <img src="/yottomo-jet-image/matching2.png" />
                   <figcaption>
-                    <h3>同期に“友達になる！”ボタンを押すとどうなるの？？</h3>
-                    <p>お互いがそのボタンを押すとマッチングするよ！</p>
+                    <h3>マッチングしたかはどうやってわかるの？？</h3>
+                    <p>My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
                   </figcaption>
                 </figure>
                 </div>
                 
-                <div class="col-xs-12 col-sm-6 col-sm-offset-6">  
-                <figure  class="box4" ontouchstart="">
-                  <img src="/yottomo-jet-image/profile.jpg" />
+                <div class="hidden-xs col-sm-8">  
+                <figure  class="box3" ontouchstart="">
+                  <img src="/yottomo-jet-image/matching.png" />
                   <figcaption>
-                    <h3>“友達になる！”ボタンを押してもらうためには<br>どうすればいいの？？</h3>
-                    <p>自分のプロフィールを書いてみんなにアピール！</p>
+                    <h3>マッチングしたかはどうやってわかるの？？</h3>
+                    <p>My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
+                  </figcaption>
+                </figure>
+                </div>
+                
+                <!--四つ目-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
+                <figure  class="box4" ontouchstart="">
+                  <img src="/yottomo-jet-image/users2.png" />
+                  <figcaption>
+                    <h3>どうやって友達になりたい同期を探すの？？</h3>
+                    <p>同期一覧から探すことができるよ！<br>名前をクリックすると詳しいプロフィールが見れるよ！</p>
+                  </figcaption>
+                </figure>
+                </div>
+                
+                <div class="hidden-xs col-sm-8 col-sm-offset-4">
+                <figure  class="box4" ontouchstart="">
+                  <img src="/yottomo-jet-image/users.png" />
+                  <figcaption>
+                    <h3>どうやって友達になりたい同期を探すの？？</h3>
+                    <p>同期一覧から探すことができるよ！<br>名前をクリックすると詳しいプロフィールが見れるよ！</p>
+                  </figcaption>
+                </figure>
+                </div>
+                
+                <!--五つ目-->
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
+                <figure  class="box5" ontouchstart="">
+                  <img src="/yottomo-jet-image/profile2.png">
+                  <figcaption>
+                    <h3>マッチングするためにはどうすればいいの？？</h3>
+                    <p>自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
+                  </figcaption>
+                </figure>
+                </div>
+                
+                <div class="hidden-xs col-sm-8">  
+                <figure  class="box5" ontouchstart="">
+                  <img src="/yottomo-jet-image/profile.png" />
+                  <figcaption>
+                    <h3>マッチングするためにはどうすればいいの？？</h3>
+                    <p>自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
                   </figcaption>
                 </figure>
                 </div>
@@ -326,7 +387,7 @@
           </div>
         </div>     
         @endif
-      </div>
+      <!--</div>-->
       @include('commons.footer')
     </body>
     <!----------------------------------------------------------------------Bodyここまで---------------------------------------------------------------------->

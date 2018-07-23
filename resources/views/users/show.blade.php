@@ -1,7 +1,29 @@
 <style>
     .profile{
     font-family:'HuiFontP109';
-    font-size: 30px;
+    /*font-size: 30px;*/
+    font-size: 20px;
+    }
+    
+    @media (min-width: 500px) {
+    /* style applied if window's width is 500px or more */
+        .profile {
+            font-size: 3vmax;
+        }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .profile {
+         font-size: 3vmax;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+    /* style applied if window's width is 1000px or more */
+        .profile {
+            font-size: 30px;
+        }
     }
     
     @font-face{
@@ -15,8 +37,31 @@
     
     .icon{
         float: right;
-        width: 150px;
+        width: 100px;
     }
+    
+    @media (min-width: 500px) {
+    /* style applied if window's width is 500px or more */
+        .icon {
+             width: 150px;
+        }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .icon {
+          width: 150px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+    /* style applied if window's width is 1000px or more */
+        .icon {
+             width: 150px;
+        }
+    }
+    
+    
     
     .scroll{
         overflow-y:scroll;
@@ -25,79 +70,43 @@
     
     .panel-heading{
         font-family:'HuiFontP109';
-        font-size: 40px;
+        font-size: 20px;
     }
     
-    .panel-title{
-        font-family:'HuiFontP109';
-        font-size: 50px;
+    @media (min-width: 500px) {
+    /* style applied if window's width is 500px or more */
+        .panel-heading {
+            font-size: 3vmax;
+        }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .panel-heading {
+         font-size: 3vmax;
+        }
     }
     
-    /*.btn1{*/
-    /*    display: inline-block;*/
-    /*  padding: .20em .20em;*/
-    /*  border: 2px dashed #333;*/
-    /*  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;*/
-    /*  color: #333;*/
-      /*text-decoration: none;*/
-    /*  text-align: center;*/
-    /*  font-size: 1.5em;*/
-    /*  font-family:'HuiFontP109';*/
-    /*}*/
-    
+    @media (min-width: 1000px) {
+    /* style applied if window's width is 1000px or more */
+        .panel-heading {
+            font-size: 30px;
+        }
+    }
+
     body {
         background-color: #486d46;
         background-image: url("../yottomo-jet-image/tukue3.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
-       }
+    }
     
     .nav {
         font-family:'HuiFontP109'; 
         font-size: 20px;
         font-weight: bolder;
     }
-    
-    .nav1 {
-        background: #dee3e5;
-        background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
-        background-position: 0 0, 10px 10px;
-        background-size: 20px 20px;
-        padding: 1em;
-        color: #593869;
-    }
-          
-    .nav2 {
-        background:#e7c7f9;
-        background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
-        background-position: 0 0, 10px 10px;
-        background-size: 20px 20px;
-        padding: 1em;
-        color: #593869;
-    }
-    
-    
-    .nav3 {
-        background: #bee9f7;
-        background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
-        background-position: 0 0, 10px 10px;
-        background-size: 20px 20px;
-        padding: 1em;
-        color: #593869;
-    }
-    
-    /*.button {*/
-    /*    display: inline-block;*/
-    /*  padding: .2em 2.5em;*/
-    /*  border: 2px solid #333;*/
-    /*  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;*/
-    /*  color: #333;*/
-    /*  font-family: 'Covered By Your Grace', cursive;*/
-    /*  font-weight: 400;*/
-    /*  text-decoration: none;*/
-    /*  text-align: center;*/
-    /*}*/
     
     .output{
         font-weight: bold;
@@ -110,22 +119,145 @@
     
     .panel-title li{
         font-family:'HuiFontP109';
-        font-size: 50px;
+        font-size: 30px;
         font-weight: bold;
         list-style:none;
     }
     
+    @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+        .panel-title li{
+            font-size: 30px;
+        }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .panel-title li{
+         font-size: 40px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        /* style applied if window's width is 1000px or more */
+        .panel-title li{
+            font-size: 40px;
+        }
+    }
+    
     .panel-team li{
         font-family:'HuiFontP109';
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
         list-style:none;
+    }
+    
+    @media (min-width: 500px) {
+    /* style applied if window's width is 500px or more */
+        .panel-team li{
+            font-size: 30px;
+        }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .panel-team li{
+         font-size: 40px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+    /* style applied if window's width is 1000px or more */
+        .panel-team li{
+            font-size: 40px;
+        }
     }
     
     .badge {
         font-family:'Meiryo';
     }
+
+
+    .fun-btn {
+        font-family:'HuiFontP109';
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 80px;
+        padding: 0.8em;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: #8E24AA;
+        text-shadow: 0 0 5px white;
+        background: repeating-linear-gradient(-45deg, #CE93D8, #CE93D8 3px,#E1BEE7 3px, #E1BEE7 7px);
+        transition: .4s;
+        border-radius: 4px;
+        }
+        .fun-btn:hover {
+        background: repeating-linear-gradient(-45deg, #CE93D8, #CE93D8 5px,#E1BEE7 5px, #E1BEE7 9px);
+        transition: .4s;
+        }
+    
+    
+    aside {
+        float: right;
+    }
+
+    .btn {
+        width: 80px;
+        height: 30px;
+    }
+        @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+            .btn {
+                 width: 100px;
+            }
+        }
+    
+        @media (min-width: 750px) {
+            /* style applied if window's width is 750px or more */
+            .btn {
+              width: 100px;
+            }
+        }
+        
+        @media (min-width: 1000px) {
+        /* style applied if window's width is 1000px or more */
+            .btn {
+                 width: 120px;
+                 height: 40px; 
+            }
+        }
+           
+    
+    .button {
+        font-family:'HuiFontP109';
+        font-size: 12px;
+    }
+        @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+            .button {
+                 font-size: 15px;
+            }
+        }
+    
+        @media (min-width: 750px) {
+            /* style applied if window's width is 750px or more */
+            .button {
+              font-size: 15px;
+            }
+        }
+        
+        @media (min-width: 1000px) {
+        /* style applied if window's width is 1000px or more */
+            .button {
+                 font-size: 20px;
+            }
+        }
+        
 </style>
+
 
 @extends('layouts.app')
 
@@ -152,17 +284,20 @@
             @if (Auth::id() == $user->id)
                 <ul class="nav nav-tabs nav-justified">
                     <!--<li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">メモ一覧 <span class="badge">{{ $count_memos }}</span></a></li>-->
-                    <li role="presentation" class="nav1" class="{{ Request::is('users/*/friends') ? 'active' : '' }}"><a href="{{ route('users.friends', ['id' => $user->id]) }}">友達になりたい人たち<span class="badge">{{ $count_friends }}</span></a></li>
-                    <li role="presentation" class="nav2" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">ズッ友になるかも<span class="badge"></span></a></li>
-                    <li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>
+                    <!--<li role="presentation" class="nav1" class="{{ Request::is('users/*/friends') ? 'active' : '' }}"><a href="{{ route('users.friends', ['id' => $user->id]) }}">気になる！一覧<span class="badge">{{ $count_friends }}</span></a></li>-->
+                    <!--<li role="presentation" class="nav2" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">マッチング成立<span class="badge"></span></a></li>-->
+                    <!--<li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>-->
                 </ul>
+                <aside><button class="fun-btn"><a href="{{ route('users.futures', ['id' => $user->id]) }}">マッチング成立一覧</a></button>
+        </aside>
             @endif
              <!--
              ここにプロフィールを表示できるようにする
              [編集]ボタンがあって、それを押すと、edit.blade.phpにとぶ
              edit.blade.phpで[更新]を押すと、更新されてこのページにかえってくる
              -->
-            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+             
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
                 <br>
                 <div class="center jumbotron" style="background:url(../yottomo-jet-image/profilebackground.png);">
                     
@@ -175,18 +310,17 @@
                     
                     <div class="pull-right">
                         @include('user_friend.friend_button', ['user' => $user])
-                        @include('user_friend.zuttomo_button', ['user' => $user])
                     </div>
                     
                     </section>
                     
-                    
                     <div class="panel-heading" >
-                        PROFILE
+                        PROFILE<br>
                         @if (Auth::id() == $user->id)
-                        {!! link_to_route('users.edit', ' 編集する', ['id' => $user->id], ['class' => 'btn btn-primary glyphicon glyphicon-pencil']) !!}
+                        <a class="btn btn-primary glyphicon glyphicon-pencil" href="{{ route('users.edit', ['id' => $user->id]) }}" role="button"><span class="button"> 編集する</span></a>
                         @endif
                     </div>
+                    
                     <div class="panel-title">
                         <li>{{ $user->name }}</li>
                     </div>    

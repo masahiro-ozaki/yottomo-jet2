@@ -68,7 +68,7 @@
                                     </div>
                                     <div>
                                         @include('user_friend.friend_button', ['user' => $user])
-                                        @include('user_friend.zuttomo_button', ['user' => $user])
+                                        
                                     </div>
                                     <p>
                                         <p>私の趣味は、[{{ $user->hobby }}]で、チャームポイントは[{{ $user->charmpoint }}]なんだ。</p>
