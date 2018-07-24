@@ -65,11 +65,20 @@
     .badge {
         font-family:'Meiryo';
     }
+    
+    .futurebackground{
+        background-color: #486d46;
+        background-image: url("../../yottomo-jet-image/sea.jpg");
+        background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+    }
 </style>
 
 @extends('layouts.app')
 
 @section('content')
+<body class="futurebackground">
     <div class="row">
         <!--<aside class="col-xs-2">-->
         <!--    <div class="panel panel-default">-->
@@ -95,4 +104,5 @@
             </div>
         </div>
     </div>
+</body>
 @endsection

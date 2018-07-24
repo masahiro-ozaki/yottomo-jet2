@@ -572,6 +572,11 @@
               <img src="/yottomo-jet-image/tokimeki2.png" />
               <h2 class="slider__caption">ときめきフレンズとは？？</h2>
               <p class="slider__txt">同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>
+              
+              <div class='btn'>
+                  {!! link_to_route('users.show', 'MyProfileにもどる', ['id' => Auth::id()]) !!}
+              </div>
+              
                 <a class="arrow arrow-prev" href="#item-5"></a>
                 <a class="arrow arrow-next" href="#item-2"></a>
             </div>
@@ -579,6 +584,11 @@
               <img src="/yottomo-jet-image/button2-1.png" />
               <h2 class="slider__caption">どうやって使うの？？</h2>
               <p class="slider__txt">仲良くなりたい人に‘気になる！'ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
+              
+              <div class='btn'>
+                  {!! link_to_route('users.show', 'MyProfileにもどる', ['id' => Auth::id()]) !!}
+              </div>
+              
                 <a class="arrow arrow-prev" href="#item-1"></a>
                 <a class="arrow arrow-next" href="#item-3"></a>
             </div>
@@ -586,6 +596,11 @@
               <img src="/yottomo-jet-image/matching2.png" />
               <h2 class="slider__caption">マッチングしたかはどうやってわかるの？？</h2>
               <p class="slider__txt">My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
+              
+              <div class='btn'>
+                  {!! link_to_route('users.show', 'MyProfileにもどる', ['id' => Auth::id()]) !!}
+              </div>
+              
                 <a class="arrow arrow-prev" href="#item-2"></a>
                 <a class="arrow arrow-next" href="#item-4"></a>
             </div>
@@ -593,6 +608,11 @@
               <img src="/yottomo-jet-image/users2.png" />
               <h2 class="slider__caption">どうやって友達になりたい同期を探すの？？</h2>
               <p class="slider__txt">同期一覧から探すことができるよ！<br>名前のリンクから詳しいプロフィールが見れるよ！</p>
+              
+              <div class='btn'>
+                  {!! link_to_route('users.show', 'MyProfileにもどる', ['id' => Auth::id()]) !!}
+              </div>
+              
                 <a class="arrow arrow-prev" href="#item-3"></a>
                 <a class="arrow arrow-next" href="#item-5"></a>
             </div>

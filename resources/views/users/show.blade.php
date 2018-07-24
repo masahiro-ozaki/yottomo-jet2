@@ -306,6 +306,8 @@
                     <!--<li role="presentation" class="nav2" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">マッチング成立<span class="badge"></span></a></li>-->
                     <!--<li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>-->
                 </ul>
+                
+                <a class="btn btn-primary glyphicon glyphicon-pencil pull-left" href="{{ route('users.edit', ['id' => $user->id]) }}" role="button"><span class="button"> 編集する</span></a>
                 <aside>
                     <button class="fun-btn"><a href="{{ route('users.futures', ['id' => $user->id]) }}"><span>マッチング成立一覧</span></a></button>
                 </aside>
@@ -369,9 +371,6 @@
                         
                     </section>
                 </div>
-                @if (Auth::id() == $user->id)
-                <a class="btn btn-primary glyphicon glyphicon-pencil pull-right" href="{{ route('users.edit', ['id' => $user->id]) }}" role="button"><span class="button"> 編集する</span></a>
-                @endif
             </div>
         </div>
         
