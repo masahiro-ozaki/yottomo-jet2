@@ -624,7 +624,7 @@
             <div class="slider__contents carousel-item item-5"><i class="slider__image fa fa-diamond2"></i>
               <img src="/yottomo-jet-image/profile2.png">
               <h2 class="slider__caption">マッチングするためにはどうするの？？</h2>
-              <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
+              <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう！</p>
               
               <div class='btn'>
                   {!! link_to_route('login', 'はじめる', null) !!}
