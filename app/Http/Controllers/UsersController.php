@@ -14,7 +14,7 @@ class UsersController extends Controller
 {
     public function index()
     {
-        $users = User::paginate(20);
+        $users = User::orderBy('id','asc')->paginate(20);
         
         return view('users.index', [
             'users' => $users,
@@ -140,5 +140,27 @@ class UsersController extends Controller
         // $friendsのidと$futuresのuser_idが一致していれば取得したい
         // $hogeのfriend_idと$futuresのuser_idが一致していれば取得したい
         // $sougo = $futures->where('user_id', '=', '$friends['id']);
+    }
+    
+    public function getIndex(Request $request)
+    {
+        $user = \Auth::user();
+         
+        
+        // 検索するテキスト取得
+        $keyword = $request->get('keyword');
+        $query = User::query()->where('name','like','%'.$keyword.'%') 
+                              ->orWhere('hometeam','like', $keyword)
+                              ->orWhere('codingteam','like', $keyword);;
+        // ->orWhere('hometeam','like', $keyword); 
+
+ 
+        // ページネーション
+        $data = $query->orderBy('id','asc')->paginate(200);
+        $users = $data;
+        return view('users.index')
+        ->with('keyword',$keyword)
+        ->with('users', $users);
+        
     }
 }

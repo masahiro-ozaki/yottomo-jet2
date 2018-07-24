@@ -51,3 +51,5 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('memos', 'MemosController', ['only' => ['store', 'destroy']]);
 });
 
+// route to serch function
+Route::get('/search','UsersController@getIndex')->name('users.get');

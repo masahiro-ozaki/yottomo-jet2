@@ -44,6 +44,7 @@
                             <ul class="dropdown-menu">
                                 <li>{!! link_to_route('users.show', ' MyProfile', ['id' => Auth::id()], ['class' => 'glyphicon glyphicon-user']) !!}</li>
                                 <li>{!! link_to_route('users.friends', ' 気になる！一覧', ['id' => Auth::id()], ['class' => 'glyphicon glyphicon-thumbs-up']) !!}</li>
+                                <li>{!! link_to_route('users.futures', ' マッチング成立一覧', ['id' => Auth::id()], ['class' => 'glyphicon glyphicon-heart']) !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', ' Logout', null, ['class' => 'glyphicon glyphicon-log-out']) !!}</li>
                             </ul>

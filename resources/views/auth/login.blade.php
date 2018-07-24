@@ -47,13 +47,13 @@
 
             {!! Form::open(['route' => 'login.post']) !!}
                 <div class="form-group">
-                    {!! Form::label('name', 'なまえ(ニックネーム)') !!}
-                    {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
+                    {!! Form::label('name', 'なまえ') !!}
+                    {!! Form::text('name', old('name'), ['class' => 'form-control', 'placeholder' =>'社内ニックネーム(例：Taro)']) !!}
                 </div>
 
                 <div class="form-group">
                     {!! Form::label('password', 'パスワード(社員番号)') !!}
-                    {!! Form::password('password', ['class' => 'form-control']) !!}
+                    {!! Form::password('password', ['class' => 'form-control', 'placeholder' =>'1000×××××']) !!}
                 </div>
 
                 {!! Form::submit('ログイン！', ['class' => 'btn btn-primary btn-block']) !!}

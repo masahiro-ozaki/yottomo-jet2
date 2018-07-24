@@ -335,9 +335,6 @@
                     
                     <div class="panel-heading" >
                         PROFILE<br>
-                        @if (Auth::id() == $user->id)
-                        <a class="btn btn-primary glyphicon glyphicon-pencil" href="{{ route('users.edit', ['id' => $user->id]) }}" role="button"><span class="button"> 編集する</span></a>
-                        @endif
                     </div>
                     
                     <div class="panel-title">
@@ -372,6 +369,9 @@
                         
                     </section>
                 </div>
+                @if (Auth::id() == $user->id)
+                <a class="btn btn-primary glyphicon glyphicon-pencil pull-right" href="{{ route('users.edit', ['id' => $user->id]) }}" role="button"><span class="button"> 編集する</span></a>
+                @endif
             </div>
         </div>
         
