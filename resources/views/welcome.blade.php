@@ -603,27 +603,27 @@
             <div class="slider__contents carousel-item item-2"><i class="slider__image fa fa-newspaper-o"></i>
               <img src="/yottomo-jet-image/button2-1.png" />
               <h2 class="slider__caption">どうやって使うの？？</h2>
-              <p class="slider__txt">仲良くなりたい人に‘気になる！'ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
+              <p class="slider__txt">仲良くなりたい人に'気になる！'ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
                 <a class="arrow arrow-prev" href="#item-1"></a>
                 <a class="arrow arrow-next" href="#item-3"></a>
             </div>
             <div class="slider__contents carousel-item item-3"><i class="slider__image fa fa-television"></i>
               <img src="/yottomo-jet-image/matching2.png" />
               <h2 class="slider__caption">マッチングしたかはどうやってわかるの？？</h2>
-              <p class="slider__txt">My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
+              <p class="slider__txt">マッチング成立一覧で確認できるよ！<br>マッチングしたら実際にその人に話しかけに行くのもアリ！？</p>
                 <a class="arrow arrow-prev" href="#item-2"></a>
                 <a class="arrow arrow-next" href="#item-4"></a>
             </div>
             <div class="slider__contents carousel-item item-4"><i class="slider__image fa fa-diamond"></i>
               <img src="/yottomo-jet-image/users2.png" />
               <h2 class="slider__caption">どうやって友達になりたい同期を探すの？？</h2>
-              <p class="slider__txt">同期一覧から探すことができるよ！<br>名前のリンクから詳しいプロフィールが見れるよ！</p>
+              <p class="slider__txt">同期一覧から探せるよ！<br>名前のリンクから詳しいプロフィールを見に行こう！</p>
                 <a class="arrow arrow-prev" href="#item-3"></a>
                 <a class="arrow arrow-next" href="#item-5"></a>
             </div>
             <div class="slider__contents carousel-item item-5"><i class="slider__image fa fa-diamond2"></i>
               <img src="/yottomo-jet-image/profile2.png">
-              <h2 class="slider__caption">マッチングするためにはどうすればいいの？？</h2>
+              <h2 class="slider__caption">マッチングするためにはどうするの？？</h2>
               <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
               
               <div class='btn'>
