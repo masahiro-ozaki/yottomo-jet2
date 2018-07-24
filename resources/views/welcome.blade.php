@@ -19,7 +19,7 @@
             /*background-color:pink;*/
             /*background: url('yottomo-jet-image/background.jpg') no-repeat; */
             /*background-size: contain;*/
-            background: linear-gradient(-45deg, rgba(255, 255, 255, .3), rgba(255, 25, 255, .3)) fixed, url('yottomo-jet-image/back2.png') fixed;
+            background: linear-gradient(-45deg, rgba(255, 255, 255, .3), rgba(255, 25, 255, .3)) fixed, url('yottomo-jet-image/back3.png') fixed;
             background-size: cover;
           }
           
@@ -409,135 +409,137 @@
           }
           /*********************************************スライダー*********************************************/
          
-         /*.carousel-wrapper{*/
-         /*   height:700px;*/
-         /*   position:relative;*/
-         /*   width:1365px;*/
-         /*   margin:0 auto;*/
-         /* }*/
-         /* .carousel-item{*/
-         /*   position:absolute;*/
-         /*   top:0;*/
-         /*   bottom:0;*/
-         /*   left:0;*/
-         /*   right:0;*/
-         /*   padding:25px 50px;*/
-         /*   opacity:0;*/
-         /*   transition: all 0.5s ease-in-out;*/
-         /* }*/
-         /* .arrow{*/
-         /*   position:absolute;*/
-         /*   top:0;*/
-         /*   display:block;*/
-         /*   width:50px;*/
-         /*   height:100%;*/
-         /*   -webkit-tap-highlight-color: rgba(0,0,0,0);*/
-         /*   background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;*/
-         /* }*/
+         .carousel-wrapper{
+            height:700px;
+            position:relative;
+            width:600px;
+            margin:0 auto;
+          }
+          .carousel-item{
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            padding:25px 50px;
+            opacity:0;
+            transition: all 0.5s ease-in-out;
+          }
+          .arrow{
+            position:absolute;
+            top:0;
+            display:block;
+            width:50px;
+            height:100%;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+          }
           
-         /* .arrow-prev{*/
-         /*   left:0;*/
-         /* }*/
+          .arrow-prev{
+            left:0;
+          }
            
-         /* .arrow-next{*/
-         /*     right:0;*/
-         /*     -webkit-transform: rotate(180deg);*/
-         /*      transform: rotate(180deg);*/
-         /*   }*/
+          .arrow-next{
+              right:0;
+              -webkit-transform: rotate(180deg);
+               transform: rotate(180deg);
+            }
           
-         /* .light{*/
-         /*   color:white;*/
-         /* }*/
+          .light{
+            color:white;
+          }
           
-         /* @media (max-width: 480px) {*/
-         /*       .arrow, .light .arrow {*/
-         /*         background-size: 10px;*/
-         /*         background-position: 10px 50%;*/
-         /*       }*/
-         /*     }*/
+          @media (max-width: 480px) {
+                .arrow, .light .arrow {
+                  background-size: 10px;
+                  background-position: 10px 50%;
+                }
+              }
           
           
-         /* [id^="item"] {*/
-         /*     display: none;*/
-         /*   }*/
+          [id^="item"] {
+              display: none;
+            }
           
-         /* .item-1 {*/
-         /*     z-index: 2;*/
-         /*     opacity: 1;*/
-         /*   background:url(/yottomo-jet-image/tokimeki2.png);*/
-         /*   background-size:cover;*/
-         /*   }*/
-         /* .item-2{*/
-         /*   background:url(/yottomo-jet-image/button2-1.png);*/
-         /*    background-size:cover;*/
-         /* }*/
-         /* .item-3{*/
-         /*   background:url(/yottomo-jet-image/matching2.png);*/
-         /*    background-size:cover;*/
-         /* }*/
-         /* .item-4{*/
-         /*   background:url(/yottomo-jet-image/users2.png);*/
-         /*    background-size:cover;*/
-         /* }*/
-         /* .item-5{*/
-         /*   background:url(/yottomo-jet-image/profile2.png);*/
-         /*    background-size:cover;*/
-         /* }*/
+          .item-1 {
+              z-index: 2;
+              opacity: 1;
+            /*background:url(/yottomo-jet-image/tokimeki2.png);*/
+            /*background-size:cover;*/
+            }
+          .item-2{
+            /*background:url(/yottomo-jet-image/button2-1.png);*/
+             /*background-size:cover;*/
+          }
+          .item-3{
+            /*background:url(/yottomo-jet-image/matching2.png);*/
+             /*background-size:cover;*/
+          }
+          .item-4{
+            /*background:url(/yottomo-jet-image/users2.png);*/
+             /*background-size:cover;*/
+          }
+          .item-5{
+            /*background:url(/yottomo-jet-image/profile2.png);*/
+             /*background-size:cover;*/
+          }
           
-         /* *:target ~ .item-1 {*/
-         /*     opacity: 0;*/
-         /*   }*/
+          *:target ~ .item-1 {
+              opacity: 0;
+            }
           
-         /* #item-1:target ~ .item-1 {*/
-         /*     opacity: 1;*/
-         /*   }*/
+          #item-1:target ~ .item-1 {
+              opacity: 1;
+            }
           
-         /* #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4, #item-5:target ~ .item-5 {*/
-         /*     z-index: 3;*/
-         /*     opacity: 1;*/
+          #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4, #item-5:target ~ .item-5 {
+              z-index: 3;
+              opacity: 1;
             
-         /* }*/
+          }
 
-/*         .memox{*/
-/*   position:relative;*/
-/*   background:#fffde7;*/
-/*   width:30%;*/
-/*   margin:2em auto;*/
-/*   padding:1.5em 1em;*/
-/*   transform: rotate(-2deg);*/
-/*   box-shadow:1px 1px 4px rgba(0,0,0,0.2);*/
-/*   color:#795548;*/
-/*}*/
-/*.memox::before{*/
-/*   content:'ときめきフレンズ';*/
-/*   position:relative;*/
-/*   display:inline-block;*/
-/*   border-bottom:3px solid #795548;*/
-/*   border-radius: 0 0 40% 5% / 0 0 15% 20%;*/
-/*   padding:0 1em 0.1em 0.2em;*/
-/*   font-size:110%;*/
-/*   font-weight:bold;*/
-/*   transform: rotate(-5deg);*/
-/*}*/
-/*.memox::after{*/
-/*   content:'';*/
-/*   position:absolute;*/
-/*   left:50%;*/
-/*   top:-15px;*/
-/*   margin-left:-75px;*/
-/*   width:150px;*/
-/*   height:30px;*/
-/*   background:rgba(245,245,245,0.7);*/
-/*   box-shadow:1px 1px 4px rgba(0,0,0,0.2);*/
-/*   transform: rotate(-4deg);*/
-/*}*/
-/*.memox ol{*/
-/*   margin:1em 0.5em 0 2em;*/
-/*   padding:0 0 0 0;*/
-/*}*/
-/*.memox ol li{*/
-/*   margin-bottom:0.5em;*/
-/*}*/
+         .memox{
+           /*position: fixed;*/
+   position:relative;
+   background:#fffde7;
+   width:30%;
+   margin:2em auto;
+   margin-left:50px;
+   padding:1.5em 1em;
+   transform: rotate(-2deg);
+   box-shadow:1px 1px 4px rgba(0,0,0,0.2);
+   color:#795548;
+}
+.memox::before{
+   /*content:'ときめきフレンズ';*/
+   position:relative;
+   display:inline-block;
+   border-bottom:3px solid #795548;
+   border-radius: 0 0 40% 5% / 0 0 15% 20%;
+   padding:0 1em 0.1em 0.2em;
+   font-size:110%;
+   font-weight:bold;
+   transform: rotate(-5deg);
+}
+.memox::after{
+   content:'';
+   position:absolute;
+   left:50%;
+   top:-15px;
+   margin-left:-75px;
+   width:150px;
+   height:30px;
+   background:rgba(245,245,245,0.7);
+   box-shadow:1px 1px 4px rgba(0,0,0,0.2);
+   transform: rotate(-4deg);
+}
+.memox ol{
+   margin:1em 0.5em 0 2em;
+   padding:0 0 0 0;
+}
+.memox ol li{
+   margin-bottom:0.5em;
+}
         </style>
         
         
@@ -553,38 +555,53 @@
             {{ $user->name }}
         @else
         
-        <!--<div class="memox huifont">-->
-        <!-- <br>～forever with you～-->
-        <!--</div>-->
+        
+        <!--<div class="memox huifont">ときめき<br>フレンズ</div>-->
+        <!--<div>ときめきフレンズ<br>～forever with you～</div>-->
+        
+        <!--<div class="memox huifont"><br>forever with you～</div>-->
         
         <div class="slider">
-          <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide4" class="slider__nav"/>
-          <input type="radio" name="slider" title="slide5" class="slider__nav"/>
-          <div class="slider__inner">
-            <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+          <!--<input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>-->
+          <!--<input type="radio" name="slider" title="slide2" class="slider__nav"/>-->
+          <!--<input type="radio" name="slider" title="slide3" class="slider__nav"/>-->
+          <!--<input type="radio" name="slider" title="slide4" class="slider__nav"/>-->
+          <!--<input type="radio" name="slider" title="slide5" class="slider__nav"/>-->
+          <div class="slider__inner carousel-wrapper">
+            <span id="item-1"></span>
+            <span id="item-2"></span>
+            <span id="item-3"></span>
+            <span id="item-4"></span>
+            <span id="item-5"></span>
+            <div class="slider__contents carousel-item item-1"><i class="slider__image fa fa-codepen"></i>
               <img src="/yottomo-jet-image/tokimeki2.png" />
               <h2 class="slider__caption">ときめきフレンズとは？？</h2>
               <p class="slider__txt">同期ともっと仲良くなれるアプリだよ☆彡<br>知られざる一面を発見できるかも？</p>
+                <a class="arrow arrow-prev" href="#item-5"></a>
+                <a class="arrow arrow-next" href="#item-2"></a>
             </div>
-            <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+            <div class="slider__contents carousel-item item-2"><i class="slider__image fa fa-newspaper-o"></i>
               <img src="/yottomo-jet-image/button2-1.png" />
               <h2 class="slider__caption">どうやって使うの？？</h2>
               <p class="slider__txt">仲良くなりたい人に‘気になる！'ボタンを押してみよう！<br>お互いがボタンを押すとマッチングするよ！</p>
+                <a class="arrow arrow-prev" href="#item-1"></a>
+                <a class="arrow arrow-next" href="#item-3"></a>
             </div>
-            <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+            <div class="slider__contents carousel-item item-3"><i class="slider__image fa fa-television"></i>
               <img src="/yottomo-jet-image/matching2.png" />
               <h2 class="slider__caption">マッチングしたかはどうやってわかるの？？</h2>
               <p class="slider__txt">My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
+                <a class="arrow arrow-prev" href="#item-2"></a>
+                <a class="arrow arrow-next" href="#item-4"></a>
             </div>
-            <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+            <div class="slider__contents carousel-item item-4"><i class="slider__image fa fa-diamond"></i>
               <img src="/yottomo-jet-image/users2.png" />
               <h2 class="slider__caption">どうやって友達になりたい同期を探すの？？</h2>
               <p class="slider__txt">同期一覧から探すことができるよ！<br>名前のリンクから詳しいプロフィールが見れるよ！</p>
+                <a class="arrow arrow-prev" href="#item-3"></a>
+                <a class="arrow arrow-next" href="#item-5"></a>
             </div>
-            <div class="slider__contents"><i class="slider__image fa fa-diamond2"></i>
+            <div class="slider__contents carousel-item item-5"><i class="slider__image fa fa-diamond2"></i>
               <img src="/yottomo-jet-image/profile2.png">
               <h2 class="slider__caption">マッチングするためにはどうすればいいの？？</h2>
               <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
@@ -592,7 +609,9 @@
               <div class='btn'>
                   {!! link_to_route('login', 'はじめる', null) !!}
               </div>
-          
+              
+                <a class="arrow arrow-prev" href="#item-4"></a>
+                <a class="arrow arrow-next" href="#item-1"></a>
             </div>
           </div>
         </div>
