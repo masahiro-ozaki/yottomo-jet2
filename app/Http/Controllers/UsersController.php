@@ -106,7 +106,7 @@ class UsersController extends Controller
         
         // $sougo_id：$futures_aと$hoge_aの中で共通するidのみを取得
         $sougo_id = array_intersect($futures_a, $hoge_a);
-        // $count_sougo = count($sougo_id);
+        $count_sougo = count($sougo_id);
         
         // $data = [];
         
@@ -125,7 +125,7 @@ class UsersController extends Controller
             // array_push($data['users'], ['key' => 'val']);
                 
         $data += $this->counts($user);
-        return view('users.futures', $data);
+        return view('users.futures', $data)->with('count_sougo',$count_sougo);
         
         // usersテーブルの中から、【Judy】を取得し、$userに格納
         // $user = User::find($id);
@@ -151,7 +151,8 @@ class UsersController extends Controller
         $keyword = $request->get('keyword');
         $query = User::query()->where('name','like','%'.$keyword.'%') 
                               ->orWhere('hometeam','like', $keyword)
-                              ->orWhere('codingteam','like', $keyword);;
+                              ->orWhere('codingteam','like', $keyword)
+                              ->orWhere('hobby','like', '%'.$keyword.'%');
         // ->orWhere('hometeam','like', $keyword); 
 
  

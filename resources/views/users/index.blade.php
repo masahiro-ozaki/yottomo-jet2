@@ -1,3 +1,20 @@
+<style>
+    .search2{
+    font-family:'HuiFontP109';
+    font-size: 30px;
+    }
+    
+    @font-face{
+    font-family:'HuiFontP109';
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot');
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot?#iefix') format('embedded-opentype'),
+    url('https://dl.dropboxusercontent.com/s/7pscemjdvt0wyiq/HuiFontP109.woff') format('woff'),
+    url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
+    url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
+    }
+    
+</style>
+
 @extends('layouts.app')
 
 @section('content')
