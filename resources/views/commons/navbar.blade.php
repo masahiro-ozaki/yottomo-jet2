@@ -47,6 +47,7 @@
                                 <li>{!! link_to_route('users.futures', ' マッチング成立一覧', ['id' => Auth::id()], ['class' => 'glyphicon glyphicon-heart']) !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', ' Logout', null, ['class' => 'glyphicon glyphicon-log-out']) !!}</li>
+                                <li>{!! link_to_route('howto', ' 使い方', null, ['class' => 'glyphicon glyphicon-info-sign']) !!}</li>
                             </ul>
                         </li>
                     @else

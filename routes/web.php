@@ -46,6 +46,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('future', 'UserFriendController@future')->name('user.future');
         Route::get('futures', 'UsersController@futures')->name('users.futures');
         
+        // Route::get('futures2', 'UsersController@futures2')->name('users.show');
+        
     });
     
     Route::resource('memos', 'MemosController', ['only' => ['store', 'destroy']]);
@@ -53,3 +55,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 // route to serch function
 Route::get('/search','UsersController@getIndex')->name('users.get');
+
+Route::get('/howto', function () {
+    return view('howto');
+})->name('howto');

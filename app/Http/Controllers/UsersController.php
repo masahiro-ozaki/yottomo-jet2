@@ -34,6 +34,7 @@ class UsersController extends Controller
         $data += $this->counts($user);
         
         return view('users.show', $data);
+        
     }
     
     public function edit($id)
@@ -164,4 +165,29 @@ class UsersController extends Controller
         ->with('users', $users);
         
     }
+    
+    // public function futures2($id)
+    // {
+    //     $user = User::find($id);
+        
+    //     // $hoge_a：自分をフォローしてくれているユーザのidが配列型で格納
+    //     $hoge_a = User_friend::join('users','users.id','=','user_friend.user_id')
+    //                 ->select('users.*')
+    //                 ->where('friend_id',$id)
+    //                 ->pluck('id')
+    //                 ->toArray();
+        
+    //     // $futures_a：自分がフォローしているユーザのidが配列型で格納
+    //     $futures_a = User_friend::join('users','users.id','=','user_friend.friend_id')
+    //                 ->select('users.*')
+    //                 ->where('user_id',$id)
+    //                 ->pluck('id')
+    //                 ->toArray();
+        
+    //     // $sougo_id：$futures_aと$hoge_aの中で共通するidのみを取得
+    //     $sougo_id = array_intersect($futures_a, $hoge_a);
+    //     $count_sougo2 = count($sougo_id);
+       
+    //     return view('users.show', $count_sougo2)->with('count_sougo2',$count_sougo2);
+    // }
 }
