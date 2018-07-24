@@ -296,8 +296,8 @@
                     justify-content: center;
           }
           .slider__nav {
-            width: 12px;
-            height: 12px;
+            width: 20px;
+            height: 20px;
             margin: 2rem 12px;
             border-radius: 50%;
             z-index: 10;
@@ -498,7 +498,46 @@
             
          /* }*/
 
-         
+/*         .memox{*/
+/*   position:relative;*/
+/*   background:#fffde7;*/
+/*   width:30%;*/
+/*   margin:2em auto;*/
+/*   padding:1.5em 1em;*/
+/*   transform: rotate(-2deg);*/
+/*   box-shadow:1px 1px 4px rgba(0,0,0,0.2);*/
+/*   color:#795548;*/
+/*}*/
+/*.memox::before{*/
+/*   content:'ときめきフレンズ';*/
+/*   position:relative;*/
+/*   display:inline-block;*/
+/*   border-bottom:3px solid #795548;*/
+/*   border-radius: 0 0 40% 5% / 0 0 15% 20%;*/
+/*   padding:0 1em 0.1em 0.2em;*/
+/*   font-size:110%;*/
+/*   font-weight:bold;*/
+/*   transform: rotate(-5deg);*/
+/*}*/
+/*.memox::after{*/
+/*   content:'';*/
+/*   position:absolute;*/
+/*   left:50%;*/
+/*   top:-15px;*/
+/*   margin-left:-75px;*/
+/*   width:150px;*/
+/*   height:30px;*/
+/*   background:rgba(245,245,245,0.7);*/
+/*   box-shadow:1px 1px 4px rgba(0,0,0,0.2);*/
+/*   transform: rotate(-4deg);*/
+/*}*/
+/*.memox ol{*/
+/*   margin:1em 0.5em 0 2em;*/
+/*   padding:0 0 0 0;*/
+/*}*/
+/*.memox ol li{*/
+/*   margin-bottom:0.5em;*/
+/*}*/
         </style>
         
         
@@ -513,6 +552,10 @@
             <?php $user = Auth::user(); ?>
             {{ $user->name }}
         @else
+        
+        <!--<div class="memox huifont">-->
+        <!-- <br>～forever with you～-->
+        <!--</div>-->
         
         <div class="slider">
           <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
