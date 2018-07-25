@@ -51,6 +51,10 @@
           text-decoration: none;
           }
           
+          a {
+          text-decoration: none;
+          }
+          
           section.flex{
             display: flex;
             flex-direction: row;

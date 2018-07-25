@@ -16,9 +16,6 @@
         <style type="text/css">
           
           body {
-            /*background-color:pink;*/
-            /*background: url('yottomo-jet-image/background.jpg') no-repeat; */
-            /*background-size: contain;*/
             background: linear-gradient(-45deg, rgba(255, 255, 255, .3), rgba(255, 25, 255, .3)) fixed, url('') fixed;
             background-size: cover;
           }
@@ -42,13 +39,17 @@
             align-items: center;
           }
           
-          .btn:hover{
-            -webkit-transform: rotateY(360deg);
-            -ms-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-          }
+          /*.btn:hover{*/
+          /*  -webkit-transform: rotateY(360deg);*/
+          /*  -ms-transform: rotateY(360deg);*/
+          /*  transform: rotateY(360deg);*/
+          /*}*/
           
           a:hover {
+          text-decoration: none;
+          }
+          
+          a {
           text-decoration: none;
           }
           
@@ -156,7 +157,7 @@
             }
             
             a {
-              font-size: 40px;
+              font-size: 30px;
             }
           }
           
@@ -550,11 +551,6 @@
     <body>
       <!--<div class="container">-->
         @include('commons.error_messages')
-        
-        <!--<div class="memox huifont">ときめき<br>フレンズ</div>-->
-        <!--<div>ときめきフレンズ<br>～forever with you～</div>-->
-        
-        <!--<div class="memox huifont"><br>forever with you～</div>-->
         
         <div class="slider">
           <!--<input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>-->

@@ -98,25 +98,16 @@
     .badge {
         font-family:'Meiryo';
     }
+    
+    p {
+        font-family:'HuiFontP109'; 
+    }
 </style>
 
 @extends('layouts.app')
 
 @section('content')
     <div class="row">
-        <!--<aside class="col-xs-2">-->
-        <!--    <div class="panel panel-default">-->
-        <!--        <div class="panel-heading">-->
-        <!--            <h3 class="panel-title">{{ $user->name }} ({{ $user->hometeam }},{{ $user->codingteam }})</h3>-->
-        <!--        </div>-->
-        <!--        <div class="panel-body">-->
-        <!--        <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->name, 500) }}" alt="">-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--    <div class="pull-right">-->
-        <!--        @include('user_friend.friend_button', ['user' => $user])-->
-        <!--    </div>-->
-        <!--</aside>-->
         <div class="col-xs-12">
             @if (Auth::id() == $user->id)
                 <ul class="nav nav-tabs nav-justified">
@@ -125,12 +116,6 @@
                     <!--<li role="presentation" class="nav2" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">ズッ友になるかも<span class="badge"></span></a></li>-->
                     <!--<li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>-->
                 </ul>
-            @endif
-             <!--
-             ここにプロフィールを表示できるようにする
-             [編集]ボタンがあって、それを押すと、edit.blade.phpにとぶ
-             edit.blade.phpで[更新]を押すと、更新されてこのページにかえってくる
-             -->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
                 <br>
                 
@@ -176,15 +161,18 @@
                             
                             
                             <div class="pull-right">
-                                @if (Auth::id() == $user->id)
                                     {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
-                                @endif
                             </div>
                         {!! Form::close() !!}
                         </div>
                 </div>
                 </section>
             </div>
+            @else
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
+                    <div class="center jumbotron text-center"><p>他人の見たらダメだよ(/ω＼)</p></div>
+                </div>
+            @endif
         </div>
     </div>
 @endsection

@@ -37,9 +37,10 @@
 
 @section('content')
     <div class="form-wrapper col-xs-8 col-xs-offset-2">
-        <br><br>
+         <p>18新卒のみんなは {!! link_to_route('login', 'こちらから') !!}</p>
     <div class="text-center">
-        <h1>新規登録画面</h1>
+        <h1>新規登録</h1>
+        <p>～18新卒以外の方～</p>
     </div>
 
     <div class="row">

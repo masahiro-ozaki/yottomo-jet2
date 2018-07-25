@@ -39,7 +39,7 @@
     <div class="form-wrapper col-xs-8 col-xs-offset-2">
         <br><br>
     <div class="text-center">
-        <h1>ログイン画面</h1>
+        <h1>ログイン</h1>
     </div>
 
     <div class="row">
@@ -59,7 +59,7 @@
                 {!! Form::submit('ログイン！', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
 
-            <p>18卒以外の方は {!! link_to_route('signup.get', 'こちらから') !!}</p>
+            <p>18新卒以外の方は {!! link_to_route('signup.get', 'こちらから') !!}</p>
         </div>
     </div>
     </div>

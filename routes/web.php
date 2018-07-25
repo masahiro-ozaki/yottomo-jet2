@@ -59,3 +59,9 @@ Route::get('/search','UsersController@getIndex')->name('users.get');
 Route::get('/howto', function () {
     return view('howto');
 })->name('howto');
+
+// route to serch function
+Route::get('/search','UsersController@getIndex')->name('users.get');
+Route::get('/ryoko','UsersController@getRyoko')->name('users.getRyoko');
+Route::get('/eiga','UsersController@getEiga')->name('users.getEiga');
+Route::get('/soccer','UsersController@getSoccer')->name('users.getSoccer');

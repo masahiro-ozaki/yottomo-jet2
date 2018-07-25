@@ -38,6 +38,7 @@
     .icon{
         float: right;
         width: 100px;
+        font-family:'HuiFontP109';
     }
     
     @media (min-width: 500px) {
@@ -222,31 +223,31 @@
         float: right;
     }
 
-    .btn {
-        width: 80px;
-        height: 30px;
-    }
-        @media (min-width: 500px) {
+    /*.btn {*/
+    /*    width: 80px;*/
+    /*    height: 30px;*/
+    /*}*/
+    /*    @media (min-width: 500px) {*/
         /* style applied if window's width is 500px or more */
-            .btn {
-                 width: 100px;
-            }
-        }
+    /*        .btn {*/
+    /*             width: 100px;*/
+    /*        }*/
+    /*    }*/
     
-        @media (min-width: 750px) {
+    /*    @media (min-width: 750px) {*/
             /* style applied if window's width is 750px or more */
-            .btn {
-              width: 100px;
-            }
-        }
+    /*        .btn {*/
+    /*          width: 100px;*/
+    /*        }*/
+    /*    }*/
         
-        @media (min-width: 1000px) {
+    /*    @media (min-width: 1000px) {*/
         /* style applied if window's width is 1000px or more */
-            .btn {
-                 width: 120px;
-                 height: 40px; 
-            }
-        }
+    /*        .btn {*/
+    /*             width: 120px;*/
+    /*             height: 40px; */
+    /*        }*/
+    /*    }*/
            
     
     .button {

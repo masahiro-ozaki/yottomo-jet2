@@ -151,9 +151,12 @@ class UsersController extends Controller
         // 検索するテキスト取得
         $keyword = $request->get('keyword');
         $query = User::query()->where('name','like','%'.$keyword.'%') 
-                              ->orWhere('hometeam','like', $keyword)
-                              ->orWhere('codingteam','like', $keyword)
-                              ->orWhere('hobby','like', '%'.$keyword.'%');
+                              ->orWhere('hometeam','like', '%'.$keyword.'%')
+                              ->orWhere('codingteam','like', '%'.$keyword.'%')
+                              ->orWhere('hobby','like', '%'.$keyword.'%')
+                              ->orWhere('birthday','like', '%'.$keyword.'%')
+                              ->orWhere('birthplace','like', '%'.$keyword.'%')
+                              ->orWhere('app','like', '%'.$keyword.'%');
         // ->orWhere('hometeam','like', $keyword); 
 
  
@@ -166,28 +169,51 @@ class UsersController extends Controller
         
     }
     
-    // public function futures2($id)
-    // {
-    //     $user = User::find($id);
+    public function getRyoko(Request $request)
+    {
+        $user = \Auth::user();
         
-    //     // $hoge_a：自分をフォローしてくれているユーザのidが配列型で格納
-    //     $hoge_a = User_friend::join('users','users.id','=','user_friend.user_id')
-    //                 ->select('users.*')
-    //                 ->where('friend_id',$id)
-    //                 ->pluck('id')
-    //                 ->toArray();
+        // 検索するテキスト取得
+        $ryoko = $request->get('ryoko');
+        $query = User::query()->where('hobby','like','%'.$ryoko.'%');
+ 
+        // ページネーション
+        $data = $query->orderBy('id','asc')->paginate(200);
+        $users = $data;
+        return view('users.index')
+        ->with('ryoko',$ryoko)
+        ->with('users', $users);
+    }
+    
+    public function getEiga(Request $request)
+    {
+        $user = \Auth::user();
         
-    //     // $futures_a：自分がフォローしているユーザのidが配列型で格納
-    //     $futures_a = User_friend::join('users','users.id','=','user_friend.friend_id')
-    //                 ->select('users.*')
-    //                 ->where('user_id',$id)
-    //                 ->pluck('id')
-    //                 ->toArray();
+        // 検索するテキスト取得
+        $eiga = $request->get('eiga');
+        $query = User::query()->where('hobby','like','%'.$eiga.'%');
+ 
+        // ページネーション
+        $data = $query->orderBy('id','asc')->paginate(200);
+        $users = $data;
+        return view('users.index')
+        ->with('eiga',$eiga)
+        ->with('users', $users);
+    }
+    
+    public function getSoccer(Request $request)
+    {
+        $user = \Auth::user();
         
-    //     // $sougo_id：$futures_aと$hoge_aの中で共通するidのみを取得
-    //     $sougo_id = array_intersect($futures_a, $hoge_a);
-    //     $count_sougo2 = count($sougo_id);
-       
-    //     return view('users.show', $count_sougo2)->with('count_sougo2',$count_sougo2);
-    // }
+        // 検索するテキスト取得
+        $soccer = $request->get('soccer');
+        $query = User::query()->where('hobby','like','%'.$soccer.'%');
+ 
+        // ページネーション
+        $data = $query->orderBy('id','asc')->paginate(200);
+        $users = $data;
+        return view('users.index')
+        ->with('soccer',$soccer)
+        ->with('users', $users);
+    }
 }
