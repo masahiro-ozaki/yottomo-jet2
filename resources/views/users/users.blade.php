@@ -42,6 +42,10 @@
         font-family:'HuiFontP109';
         font-size: 50px;
     }
+    
+    p {
+        text-decoration: none;
+    }
 </style>
 
 
@@ -55,7 +59,7 @@
                         <li class="media">
                             <div class="panel-heading">
                                 <div class="col-xs-4"><img class="media-object img-rounded" src="{{ Gravatar::src($user->name, 50) }}" alt=""></div>
-                                <div class="col-xs-8"><b>{!! link_to_route('users.show', $user->name, ['id' => $user->id]) !!}</b></div>
+                                <div class="col-xs-8"><p><b>{!! link_to_route('users.show', $user->name, ['id' => $user->id]) !!}</b></p></div>
                             </div>
                             <div class="media-body">
                                 <div class="panel-body">

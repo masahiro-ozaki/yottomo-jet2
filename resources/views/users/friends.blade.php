@@ -83,7 +83,7 @@
             @if (Auth::id() == $user->id)
                 <ul class="nav nav-tabs nav-justified">
                     <!--<li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">メモ一覧 <span class="badge">{{ $count_memos }}</span></a></li>-->
-                    <li role="presentation" class="nav1" class="{{ Request::is('users/*/friends') ? 'active' : '' }}"><a href="{{ route('users.friends', ['id' => $user->id]) }}">気になる！一覧<span class="badge">{{ $count_friends }}</span></a></li>
+                    <li role="presentation" class="nav1 text-center" class="{{ Request::is('users/*/friends') ? 'active' : '' }}">気になる！一覧<span class="badge">{{ $count_friends }}</span></li>
                     <!--<li role="presentation" class="nav2" class="{{ Request::is('users/*/futures') ? 'active' : '' }}"><a href="{{ route('users.futures', ['id' => $user->id]) }}">ズッ友になるかも<span class="badge"></span></a></li>-->
                     <!--<li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>-->
                 </ul>

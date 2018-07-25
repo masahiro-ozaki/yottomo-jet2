@@ -38,7 +38,7 @@
     .icon{
         float: right;
         width: 100px;
-        font-family:'HuiFontP109';
+        /*font-family:'HuiFontP109';*/
     }
     
     @media (min-width: 500px) {
@@ -182,11 +182,12 @@
     .fun-btn {
         display: inline-block;
         padding: .65em 3em;
-        background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);
-        background: linear-gradient(#fe5f95 , #ff3f7f);
+        /*background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);*/
+        /*background: linear-gradient(#fe5f95 , #ff3f7f);*/
+        background: linear-gradient(#fe5f95, #FFBEDA);
         border: 1px solid #fe3276;
         border-radius: 4px;
-        color: #fff;
+        color: white;
         font-size: 25px;
         font-family:'HuiFontP109';
         font-weight: 600;
@@ -194,7 +195,16 @@
         text-align: center;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
+        width: 400px;
+        height: 80px;
     }
+    
+    .fun-btn a {
+        text-decoration:none;
+        color: white;
+        
+    }
+    
     .fun-btn span {
         position: relative;
         display: inline-block;
@@ -223,31 +233,7 @@
         float: right;
     }
 
-    /*.btn {*/
-    /*    width: 80px;*/
-    /*    height: 30px;*/
-    /*}*/
-    /*    @media (min-width: 500px) {*/
-        /* style applied if window's width is 500px or more */
-    /*        .btn {*/
-    /*             width: 100px;*/
-    /*        }*/
-    /*    }*/
     
-    /*    @media (min-width: 750px) {*/
-            /* style applied if window's width is 750px or more */
-    /*        .btn {*/
-    /*          width: 100px;*/
-    /*        }*/
-    /*    }*/
-        
-    /*    @media (min-width: 1000px) {*/
-        /* style applied if window's width is 1000px or more */
-    /*        .btn {*/
-    /*             width: 120px;*/
-    /*             height: 40px; */
-    /*        }*/
-    /*    }*/
            
     
     .button {
@@ -274,6 +260,53 @@
                  font-size: 20px;
             }
         }
+    
+    .edit {
+        float: left;
+        padding-left: 70px;
+    }
+   
+    .edit-btn {
+    
+    display: inline-block;
+        /*padding: .65em 3em;*/
+        /*background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);*/
+        /*background: linear-gradient(#fe5f95 , #ff3f7f);*/
+        background: linear-gradient(#4689FF, #00FFFF);
+        border: 1px solid #4689FF;
+        border-radius: 4px;
+        color: white;
+        font-size: 25px;
+        font-family:'HuiFontP109';
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        width: 400px;
+        height: 80px;
+    }
+    
+    .edit-btn span {
+        font-family:'HuiFontP109';
+        font-weight: bold;
+        text-decoration:none;
+    }
+    
+    .edit-btn a {
+        text-decoration:none;
+        color: white;
+    }
+    
+    .edit-btn a:hover {
+        text-decoration:none;
+        color: #000077;
+    }
+    
+    .edit-btn a:active {
+        text-decoration:none;
+        color: #000077;
+    }
         
 </style>
 
@@ -282,23 +315,6 @@
 
 @section('content')
     <div class="row">
-        <!--<div class="col-12 clearfix">-->
-        <!--<div class="float-left">-->
-        
-        <!--<aside class="col-xs-2">-->
-        <!--    <div class="panel panel-default">-->
-        <!--        <div class="panel-heading">-->
-        <!--            <h3 class="panel-title">{{ $user->name }} ({{ $user->hometeam }},{{ $user->codingteam }})</h3>-->
-        <!--        </div>-->
-        <!--        <div class="panel-body">-->
-        <!--        <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->name, 500) }}" alt="">-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--    <div class="pull-right">-->
-        <!--        @include('user_friend.friend_button', ['user' => $user])-->
-        <!--        @include('user_friend.zuttomo_button', ['user' => $user])-->
-        <!--    </div>-->
-        <!--</aside>-->
         <div class="col-xs-12">
             @if (Auth::id() == $user->id)
                 <ul class="nav nav-tabs nav-justified">
@@ -308,16 +324,14 @@
                     <!--<li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>-->
                 </ul>
                 
-                <a class="btn btn-primary glyphicon glyphicon-pencil pull-left" href="{{ route('users.edit', ['id' => $user->id]) }}" role="button"><span class="button"> 編集する</span></a>
+                <div class="edit">
+                    <button class="edit-btn glyphicon glyphicon-pencil"><a href="{{ route('users.edit', ['id' => $user->id]) }}"><span>プロフィールを編集する</span></a></button>
+                </div>
+                
                 <aside>
                     <button class="fun-btn"><a href="{{ route('users.futures', ['id' => $user->id]) }}"><span>マッチング成立一覧</span></a></button>
                 </aside>
             @endif
-             <!--
-             ここにプロフィールを表示できるようにする
-             [編集]ボタンがあって、それを押すと、edit.blade.phpにとぶ
-             edit.blade.phpで[更新]を押すと、更新されてこのページにかえってくる
-             -->
              
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
                 <br>
@@ -362,9 +376,9 @@
                         第1位[_<span class="output">{!! $user->rank1 !!}</span>_]<br>
                         第2位[_<span class="output">{!! $user->rank2 !!}</span>_]<br>
                         第3位[_<span class="output">{!! $user->rank3 !!}</span>_]<br>
-                        よろしくね！<br><br>
+                        <br>
                         自由記述欄
-                        <div class='panel panel-info scroll' style="height: 10vh;">
+                        <div class='panel panel-info scroll' style="height: 10vh; background-color: #E3C3F6; opacity: 0.9;">
                         <p>{!!  nl2br($user->content)  !!}</p>
                         </div>
                         
