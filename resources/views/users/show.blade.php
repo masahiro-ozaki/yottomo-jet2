@@ -440,6 +440,9 @@
             text-align: center;
         }
     }
+    .pull-right {
+        font-family:'HuiFontP109';
+    }
         
 </style>
 

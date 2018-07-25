@@ -147,7 +147,7 @@
             }
             
             body {
-              background: linear-gradient(-45deg, rgba(255, 255, 255, .3), rgba(255, 25, 255, .3)) fixed, url('yottomo-jet-image/back3.png') fixed;
+              background: linear-gradient(-45deg, rgba(255, 255, 255, .3), rgba(255, 25, 255, .3)) fixed, url('') fixed;
               background-size: cover;
             }
           }

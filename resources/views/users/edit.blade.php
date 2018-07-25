@@ -158,11 +158,11 @@
                             <div>
                                 <p>{!! Form::textarea('content') !!}</p>
                             </div>
-                            
+                            <br>
                             
                             <div class="pull-right">
                                     {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
-                            </div><br>
+                            </div>
                         {!! Form::close() !!}
                         </div>
                 </div>

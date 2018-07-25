@@ -591,7 +591,7 @@
             <div class="slider__contents carousel-item item-3"><i class="slider__image fa fa-television"></i>
               <img src="/yottomo-jet-image/matching2.png" />
               <h2 class="slider__caption">マッチングしたかはどうやってわかるの？？</h2>
-              <p class="slider__txt">My Profileで確認できるよ！<br>マッチングしたらその人に話しかけに行ってみよう！</p>
+              <p class="slider__txt">マッチング成立一覧で確認できるよ！<br>マッチングしたら実際にその人に話しかけに行くのもアリ！？</p>
               
               <div class='btn'>
                   {!! link_to_route('users.show', 'MyProfileにもどる', ['id' => Auth::id()]) !!}
@@ -603,7 +603,7 @@
             <div class="slider__contents carousel-item item-4"><i class="slider__image fa fa-diamond"></i>
               <img src="/yottomo-jet-image/users2.png" />
               <h2 class="slider__caption">どうやって友達になりたい同期を探すの？？</h2>
-              <p class="slider__txt">同期一覧から探すことができるよ！<br>名前のリンクから詳しいプロフィールが見れるよ！</p>
+              <p class="slider__txt">同期一覧から探せるよ！<br>名前のリンクから詳しいプロフィールを見に行こう！</p>
               
               <div class='btn'>
                   {!! link_to_route('users.show', 'MyProfileにもどる', ['id' => Auth::id()]) !!}
@@ -615,7 +615,7 @@
             <div class="slider__contents carousel-item item-5"><i class="slider__image fa fa-diamond2"></i>
               <img src="/yottomo-jet-image/profile2.png">
               <h2 class="slider__caption">マッチングするためにはどうすればいいの？？</h2>
-              <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう！<br>面白いことを書けばマッチングしやすいかも？</p>
+              <p class="slider__txt">自分のプロフィールを書いてみんなにアピールしよう</p>
               
               <div class='btn'>
                   {!! link_to_route('users.show', 'MyProfileにもどる', ['id' => Auth::id()]) !!}

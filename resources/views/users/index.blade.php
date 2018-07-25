@@ -42,7 +42,7 @@
             <p>興味ある同期を見つけてみよう！</p>
         <form class="search" role="search"　method="get" action="/search">
 	    <div class="form-group col-xs-6 col-lg-9">
-	    	<input name='keyword' type="text" class="form-control" placeholder="例.Jet(なまえ),1-C(ホームチーム),JETS(コーディングチーム名), etc...">
+	    	<input name='keyword' type="text" class="form-control" placeholder="例.Jet(ニックネーム),1-C(ホームチーム),JETS(コーディングチーム名), etc...">
         </div>
              <button type="submit" class="btn btn-info">同期を検索！</button>
         </form>
