@@ -182,21 +182,50 @@
     .fun-btn {
         display: inline-block;
         padding: .65em 3em;
+        margin-left: 10px;
         /*background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);*/
         /*background: linear-gradient(#fe5f95 , #ff3f7f);*/
         background: linear-gradient(#fe5f95, #FFBEDA);
         border: 1px solid #fe3276;
         border-radius: 4px;
         color: white;
-        font-size: 25px;
+        font-size: 13px;
         font-family:'HuiFontP109';
         font-weight: 600;
         text-decoration: none;
         text-align: center;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
-        width: 400px;
-        height: 80px;
+        width: 240px;
+        height: 40px;
+    }
+    
+    @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+        .fun-btn{
+            font-size: 15px;
+            width: 400px;
+            height: 80px;
+            }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .fun-btn{
+         font-size: 15px;
+            width: 400px;
+            height: 80px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        /* style applied if window's width is 1000px or more */
+        .fun-btn{
+            font-size: 25px;
+            width: 400px;
+            height: 80px;
+            float: right;
+        }
     }
     
     .fun-btn a {
@@ -209,6 +238,8 @@
         position: relative;
         display: inline-block;
         padding-left: 1.6em;
+        text-align: center;
+        font-size: 15px;
     }
     .fun-btn span::before {
         position: absolute;
@@ -216,10 +247,11 @@
         left: 0;
         content: '\002764';
         color: #fff;
-        font-size: 30px;
+        font-size: 15px;
         line-height: 1;
         -webkit-animation: icon 1.5s ease-in-out infinite;
         animation: icon 1.5s ease-in-out infinite;
+        text-align: center;
     }
     @-webkit-keyframes icon {
         0% { -webkit-transform: scale(1.2); }
@@ -227,6 +259,51 @@
     @keyframes icon {
         100% { transform: scale(1.2); }
     }
+    
+    @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+        .fun-btn span{
+            font-size: 30px;
+            }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .fun-btn span{
+         font-size: 30px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+         /*style applied if window's width is 1000px or more */
+        .fun-btn span{
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    
+     @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+        .fun-btn span::before{
+            font-size: 30px;
+            }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .fun-btn span::before{
+         font-size: 30px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+         /*style applied if window's width is 1000px or more */
+        .fun-btn span::before{
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    
     
     
     aside {
@@ -261,30 +338,59 @@
             }
         }
     
-    .edit {
-        float: left;
-        padding-left: 70px;
-    }
+    /*.edit {*/
+    /*    float: left;*/
+    /*    padding-left: 70px;*/
+    /*}*/
    
     .edit-btn {
     
     display: inline-block;
-        /*padding: .65em 3em;*/
+        padding: .65em 3em;
+        margin-left: 10px;
         /*background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);*/
         /*background: linear-gradient(#fe5f95 , #ff3f7f);*/
         background: linear-gradient(#4689FF, #00FFFF);
         border: 1px solid #4689FF;
         border-radius: 4px;
         color: white;
-        font-size: 25px;
+        font-size: 13px;
         font-family:'HuiFontP109';
         font-weight: 600;
         text-decoration: none;
         text-align: center;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
-        width: 400px;
-        height: 80px;
+        width: 240px;
+        height: 40px;
+    }
+    
+    @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+        .edit-btn{
+            font-size: 15px;
+            width: 400px;
+            height: 80px;
+            }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .edit-btn{
+         font-size: 15px;
+            width: 400px;
+            height: 80px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        /* style applied if window's width is 1000px or more */
+        .edit-btn{
+            font-size: 20px;
+            width: 400px;
+            height: 80px;
+            float: left;
+        }
     }
     
     .edit-btn span {
@@ -303,9 +409,36 @@
         color: #000077;
     }
     
+    .edit-btn a:link {
+        text-decoration:none;
+        
+    }
+    
     .edit-btn a:active {
         text-decoration:none;
         color: #000077;
+    }
+    
+    @media (min-width: 500px) {
+        /* style applied if window's width is 500px or more */
+        .edit-btn span{
+            font-size: 30px;
+            }
+    }
+
+    @media (min-width: 750px) {
+        /* style applied if window's width is 750px or more */
+        .edit-btn span{
+         font-size: 30px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+         /*style applied if window's width is 1000px or more */
+        .edit-btn span{
+            font-size: 25px;
+            text-align: center;
+        }
     }
         
 </style>
@@ -324,11 +457,8 @@
                     <!--<li role="presentation" class="nav3" class="{{ Request::is('users/*/zuttomoings') ? 'active' : '' }}"><a href="{{ route('users.zuttomoings', ['id' => $user->id]) }}">ズッ友たち<span class="badge">{{ $count_zuttomoings }}</span></a></li>-->
                 </ul>
                 
-                <div class="edit">
+                <aside class="match col-xs-12 col-sm-12 col-md-12">
                     <button class="edit-btn glyphicon glyphicon-pencil"><a href="{{ route('users.edit', ['id' => $user->id]) }}"><span>プロフィールを編集する</span></a></button>
-                </div>
-                
-                <aside>
                     <button class="fun-btn"><a href="{{ route('users.futures', ['id' => $user->id]) }}"><span>マッチング成立一覧</span></a></button>
                 </aside>
             @endif

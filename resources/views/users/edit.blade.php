@@ -162,7 +162,7 @@
                             
                             <div class="pull-right">
                                     {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
-                            </div>
+                            </div><br>
                         {!! Form::close() !!}
                         </div>
                 </div>

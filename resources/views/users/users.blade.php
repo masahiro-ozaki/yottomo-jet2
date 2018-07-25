@@ -46,6 +46,10 @@
     p {
         text-decoration: none;
     }
+    
+    a:link {
+        text-decoration:none;
+    }
 </style>
 
 

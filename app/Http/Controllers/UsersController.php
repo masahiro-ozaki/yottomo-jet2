@@ -156,7 +156,11 @@ class UsersController extends Controller
                               ->orWhere('hobby','like', '%'.$keyword.'%')
                               ->orWhere('birthday','like', '%'.$keyword.'%')
                               ->orWhere('birthplace','like', '%'.$keyword.'%')
-                              ->orWhere('app','like', '%'.$keyword.'%');
+                              ->orWhere('app','like', '%'.$keyword.'%')
+                              ->orWhere('character1','like', $keyword)
+                              ->orWhere('character2','like', $keyword)
+                              ->orWhere('charmpoint','like', $keyword)
+                              ->orWhere('ranktitle','like', $keyword);
         // ->orWhere('hometeam','like', $keyword); 
 
  
@@ -214,6 +218,38 @@ class UsersController extends Controller
         $users = $data;
         return view('users.index')
         ->with('soccer',$soccer)
+        ->with('users', $users);
+    }
+    
+    public function getInsta(Request $request)
+    {
+        $user = \Auth::user();
+        
+        // 検索するテキスト取得
+        $insta = $request->get('insta');
+        $query = User::query()->where('app','like','%'.$insta.'%');
+ 
+        // ページネーション
+        $data = $query->orderBy('id','asc')->paginate(200);
+        $users = $data;
+        return view('users.index')
+        ->with('insta',$insta)
+        ->with('users', $users);
+    }
+    
+    public function getYoko(Request $request)
+    {
+        $user = \Auth::user();
+        
+        // 検索するテキスト取得
+        $yoko = $request->get('yoko');
+        $query = User::query()->where('birthplace','like','%'.$yoko.'%');
+ 
+        // ページネーション
+        $data = $query->orderBy('id','asc')->paginate(200);
+        $users = $data;
+        return view('users.index')
+        ->with('yoko',$yoko)
         ->with('users', $users);
     }
 }
