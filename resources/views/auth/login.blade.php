@@ -30,13 +30,26 @@
     .form-group {
         font-size: 20px;
     }
+    
+    .form-group p {
+        font-size: 16px;
+        color: red;
+    }
+    
+    .row p {
+        font-size: 20px;
+    }
+    
+    .row b {
+        color: red;
+    }
    
 </style>
 
 @extends('layouts.app')
 
 @section('content')
-    <div class="form-wrapper col-xs-8 col-xs-offset-2">
+    <div class="form-wrapper col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
         <br><br>
     <div class="text-center">
         <h1>ログイン</h1>
@@ -49,8 +62,9 @@
                 <div class="form-group">
                     {!! Form::label('name', 'なまえ') !!}
                     {!! Form::text('name', old('name'), ['class' => 'form-control', 'placeholder' =>'社内ニックネーム(例：Taro)']) !!}
+                <p>＊頭文字は大文字</p>
                 </div>
-
+                
                 <div class="form-group">
                     {!! Form::label('password', 'パスワード(社員番号)') !!}
                     {!! Form::password('password', ['class' => 'form-control', 'placeholder' =>'1000×××××']) !!}
@@ -59,7 +73,7 @@
                 {!! Form::submit('ログイン！', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
 
-            <p>18新卒以外の方は {!! link_to_route('signup.get', 'こちらから') !!}</p>
+            <p>18新卒<b>以外</b>の方は {!! link_to_route('signup.get', 'こちらから') !!}</p>
         </div>
     </div>
     </div>

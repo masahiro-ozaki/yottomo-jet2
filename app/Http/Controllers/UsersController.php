@@ -162,6 +162,8 @@ class UsersController extends Controller
                               ->orWhere('charmpoint','like', $keyword)
                               ->orWhere('ranktitle','like', $keyword);
         // ->orWhere('hometeam','like', $keyword); 
+        
+        
 
  
         // ページネーション
@@ -172,7 +174,7 @@ class UsersController extends Controller
         ->with('users', $users);
         
     }
-    
+   
     public function getRyoko(Request $request)
     {
         $user = \Auth::user();

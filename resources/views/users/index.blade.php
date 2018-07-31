@@ -28,6 +28,9 @@
        font-size: 20px;
     }
     
+    .result {
+        
+    }
     
 </style>
 
@@ -38,6 +41,7 @@
     <div class="search2">
     @if (Auth::check())
         <!--検索機能-->
+        
         <div class="panel2 col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10">
             <p>興味ある同期を見つけてみよう！</p>
         <form class="search" role="search"　method="get" action="/search">
@@ -65,10 +69,34 @@
             </form>
         </div>
         </div>
+        <!--検索機能ここまで-->
+        
+        
     @endif
     </div>
     <br>
-
+    <!--検索結果-->
+    <div class=result>
+    @if(Request::is('search'))
+        <p>検索結果:</p>
+    @elseif(Request::is('ryoko'))
+        <p>検索結果:旅行</p>
+    @elseif(Request::is('eiga'))
+        <p>検索結果:映画</p>
+    @elseif(Request::is('soccer'))
+        <p>検索結果:サッカー</p>
+    @elseif(Request::is('insta'))
+        <p>検索結果:インスタ</p>
+    @elseif(Request::is('yoko'))
+        <p>検索結果:横浜</p>
+    @elseif(Request::is(''))
+        <p>検索結果がありません</p>
+    @endif
+    <!--検索結果ここまで-->
+    </div>
+    
     @include('users.users', ['users' => $users])
 @endsection
+
+
 
